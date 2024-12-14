@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-template",
+  "name": "nextjs-telegram-mini-app-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,13 @@
     "dev:https": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint"
+    ]
   },
   "dependencies": {
     "@telegram-apps/sdk-react": "^2.0.5",
@@ -22,11 +28,15 @@
     "sass": "^1.83.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-angular": "^19.6.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

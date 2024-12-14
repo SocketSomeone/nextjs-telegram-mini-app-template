@@ -46,7 +46,7 @@ function RootInner({ children }: PropsWithChildren) {
   }, [initDataUser]);
 
   return (
-    <TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
+    <TonConnectUIProvider manifestUrl={`${window.location.origin}/tonconnect-manifest.json`}>
       <AppRoot
         appearance={isDark ? 'dark' : 'light'}
         platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}

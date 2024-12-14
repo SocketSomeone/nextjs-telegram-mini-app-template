@@ -8,6 +8,7 @@ Telegram Mini Apps platform using the following technologies and libraries:
 - [TON Connect](https://docs.ton.org/develop/dapps/ton-connect/overview)
 - [@telegram-apps SDK](https://docs.telegram-mini-apps.com/packages/telegram-apps-sdk/2-x)
 - [Telegram UI](https://github.com/Telegram-Mini-Apps/TelegramUI)
+- [Tailwind](https://tailwindcss.com)
 
 > The template was created using [pnpm](https://pnpm.io/). Therefore, it is
 > required to use it for this project as well. Using other package managers, you

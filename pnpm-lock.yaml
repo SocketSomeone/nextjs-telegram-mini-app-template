@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@telegram-apps/sdk-react':
-        specifier: ^2.0.19
-        version: 2.0.19(@types/react@18.3.3)(react@18.3.1)
+        specifier: ^2.0.20
+        version: 2.0.20(@types/react@18.3.3)(react@18.3.1)
       '@telegram-apps/telegram-ui':
         specifier: ^2.1.8
         version: 2.1.8(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -590,11 +590,11 @@ packages:
   '@telegram-apps/navigation@1.0.9':
     resolution: {integrity: sha512-Ur24luu+fizrKCDQAoJWQzMj+IwNiqtQlrITz42DORKSohj5yvf9kD5AJO2r9sHC+iC2pLXHCn1dV34o6tbeaQ==}
 
-  '@telegram-apps/sdk-react@2.0.19':
-    resolution: {integrity: sha512-mQfBspQd+KbNW9gp26b2QN+T+SFiYfjZV1X91mM68hIPnChPjwCJRTZrNtx+nvT49B/NURMMtTT/eF84IX1ltA==}
+  '@telegram-apps/sdk-react@2.0.20':
+    resolution: {integrity: sha512-kLVFeT+cpLSjRgvrYU/8IDId4WmZzwvvW0uoEGk1dVFoRvZCmopelF+Jjgk9m6ybGq4S5B8YQMWglimE09dRhw==}
     peerDependencies:
-      '@types/react': ^17.0.0 || ^18.0.0
-      react: ^17.0.0 || ^18.0.0
+      '@types/react': ^17.0.0 || ^18.0.0 || ^19.0.0
+      react: ^17.0.0 || ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -3096,7 +3096,7 @@ snapshots:
       '@telegram-apps/signals': 1.1.0
       '@telegram-apps/toolkit': 1.0.0
 
-  '@telegram-apps/sdk-react@2.0.19(@types/react@18.3.3)(react@18.3.1)':
+  '@telegram-apps/sdk-react@2.0.20(@types/react@18.3.3)(react@18.3.1)':
     dependencies:
       '@telegram-apps/sdk': 2.9.1
       react: 18.3.1

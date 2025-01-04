@@ -33,7 +33,7 @@ export function useTelegramMock(): void {
 				['auth_date', '1716922846'],
 				[
 					'signature',
-					'SignaturePkdisAdGwQepp8pmdCeUM6k_NKjxU5aiofGrn_SomeRandomSigna-UzResG0mLxuPcQZT5rlnWDw',
+					'6fbdaab833d39f54518bd5c3eb3f511d035e68cb',
 				],
 				[
 					'hash',

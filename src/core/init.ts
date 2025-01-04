@@ -7,7 +7,6 @@ import {
 	$debug,
 	init as initSDK,
 } from '@telegram-apps/sdk-react';
-import { hapticFeedback } from '@telegram-apps/sdk';
 
 
 /**

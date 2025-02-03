@@ -28,7 +28,7 @@
 		"sass": "^1.83.4"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.6.1",
+		"@commitlint/cli": "^19.7.1",
 		"@commitlint/config-angular": "^19.7.1",
 		"@types/node": "^22",
 		"@types/react": "^18",

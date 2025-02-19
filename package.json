@@ -21,7 +21,7 @@
 		"@tonconnect/ui-react": "^2.0.11",
 		"eruda": "^3.4.1",
 		"next": "15.1.7",
-		"next-intl": "^3.26.3",
+		"next-intl": "^3.26.4",
 		"normalize.css": "^8.0.1",
 		"react": "^18",
 		"react-dom": "^18",

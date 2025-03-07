@@ -29,7 +29,7 @@
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.8.0",
-		"@commitlint/config-angular": "^19.7.1",
+		"@commitlint/config-angular": "^19.8.0",
 		"@types/node": "^22",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",

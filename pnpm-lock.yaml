@@ -43,8 +43,8 @@ importers:
         specifier: ^19.8.0
         version: 19.8.0(@types/node@22.13.9)(typescript@5.8.2)
       '@commitlint/config-angular':
-        specifier: ^19.7.1
-        version: 19.7.1
+        specifier: ^19.8.0
+        version: 19.8.0
       '@types/node':
         specifier: ^22
         version: 22.13.9
@@ -101,12 +101,12 @@ packages:
     engines: {node: '>=v18'}
     hasBin: true
 
-  '@commitlint/config-angular-type-enum@19.5.0':
-    resolution: {integrity: sha512-4/6xrkElCSBb7+6oZXlBJ/zytkxXgmTg5gk1Voj3GAWShTivtWrPtDYvHmF858WhA695YKgxMHEPNN74UFkK8w==}
+  '@commitlint/config-angular-type-enum@19.8.0':
+    resolution: {integrity: sha512-CAFHGAgUeOGNuU5DSX1ALXvJio82NZUGPPNFFDZU7BDf6q/A2U8vT1sjZQ56JTuFBpqTRF5Qk3IfSwmp0/zsCA==}
     engines: {node: '>=v18'}
 
-  '@commitlint/config-angular@19.7.1':
-    resolution: {integrity: sha512-aDXjejXfk1kqGDZOFAGu4lJ251WloR4duODaCcSuo/U/Nfnhnzq0VrhtGPCcOlTfVrWknumurg+ZcGe6v3e5ZA==}
+  '@commitlint/config-angular@19.8.0':
+    resolution: {integrity: sha512-YVXDVUbmtsA9pv6QaRp+riQJd22zv4qvQ6Yjy5GB+pRClncX9PPNOhzPMITPyquF05QX6hC9me6ADrvrSzQ1xw==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-validator@19.8.0':
@@ -2708,11 +2708,11 @@ snapshots:
       - '@types/node'
       - typescript
 
-  '@commitlint/config-angular-type-enum@19.5.0': {}
+  '@commitlint/config-angular-type-enum@19.8.0': {}
 
-  '@commitlint/config-angular@19.7.1':
+  '@commitlint/config-angular@19.8.0':
     dependencies:
-      '@commitlint/config-angular-type-enum': 19.5.0
+      '@commitlint/config-angular-type-enum': 19.8.0
 
   '@commitlint/config-validator@19.8.0':
     dependencies:

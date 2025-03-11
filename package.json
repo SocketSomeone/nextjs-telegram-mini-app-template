@@ -20,7 +20,7 @@
 		"@telegram-apps/telegram-ui": "^2.1.8",
 		"@tonconnect/ui-react": "^2.0.12",
 		"eruda": "^3.4.1",
-		"next": "15.2.1",
+		"next": "15.2.2",
 		"next-intl": "^3.26.5",
 		"normalize.css": "^8.0.1",
 		"react": "^18",

@@ -17,9 +17,11 @@
 		]
 	},
 	"dependencies": {
+		"@eslint/eslintrc": "^3.3.0",
 		"@telegram-apps/sdk-react": "^2.0.25",
 		"@telegram-apps/telegram-ui": "^2.1.8",
 		"@tonconnect/ui-react": "^2.0.12",
+		"clsx": "^2.1.1",
 		"eruda": "^3.4.1",
 		"next": "^14",
 		"next-intl": "^3.26.5",
@@ -37,8 +39,8 @@
 		"@types/react-dom": "^18",
 		"@typescript-eslint/eslint-plugin": "8.26.1",
 		"@typescript-eslint/parser": "8.26.1",
-		"eslint": "^9",
-		"eslint-config-next": "15.2.3",
+		"eslint": "^8.57.1",
+		"eslint-config-next": "14.2.25",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.5.0",
 		"postcss": "^8",

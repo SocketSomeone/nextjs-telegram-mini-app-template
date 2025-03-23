@@ -17,6 +17,7 @@ export function useTelegramMock(): void {
 		try {
 			lp = retrieveLaunchParams();
 		} catch (e) {
+			console.error('Failed to retrieve launch parameters:', e);
 			const initDataRaw = new URLSearchParams([
 				[
 					'user',

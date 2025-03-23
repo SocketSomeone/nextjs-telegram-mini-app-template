@@ -24,6 +24,7 @@ export default function Home() {
 							before={
 								<Image
 									src={tonSvg.src}
+									alt="TON Connect"
 									style={{backgroundColor: '#007AFF'}}
 								/>
 							}

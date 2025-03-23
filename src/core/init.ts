@@ -21,7 +21,9 @@ export function init(debug: boolean): void {
 	initSDK();
 
 	// Mount all components used in the project.
-	backButton.isSupported() && backButton.mount();
+	if (backButton.isSupported()) {
+		backButton.mount();
+	}
 	miniApp.mount();
 	themeParams.mount();
 	initData.restore();
@@ -37,7 +39,9 @@ export function init(debug: boolean): void {
 
 
 	// Add Eruda if needed.
-	debug && import('eruda')
-		.then((lib) => lib.default.init())
-		.catch(console.error);
+	if (debug) {
+		import('eruda')
+			.then((lib) => lib.default.init())
+			.catch(console.error);
+	}
 }

@@ -20,7 +20,7 @@
 		"@eslint/eslintrc": "^3.3.1",
 		"@telegram-apps/sdk-react": "^2.0.25",
 		"@telegram-apps/telegram-ui": "^2.1.8",
-		"@tonconnect/ui-react": "^2.0.12",
+		"@tonconnect/ui-react": "^2.1.0",
 		"clsx": "^2.1.1",
 		"eruda": "^3.4.1",
 		"next": "^14",

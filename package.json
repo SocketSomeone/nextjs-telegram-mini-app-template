@@ -34,7 +34,7 @@
 		"@commitlint/cli": "^19.8.0",
 		"@commitlint/config-angular": "^19.8.0",
 		"@release-it/conventional-changelog": "^10.0.0",
-		"@tailwindcss/postcss": "^4.0.16",
+		"@tailwindcss/postcss": "^4.0.17",
 		"@types/node": "^22",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",

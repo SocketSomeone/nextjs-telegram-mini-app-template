@@ -91,8 +91,8 @@ importers:
         specifier: ^18.1.2
         version: 18.1.2(@types/node@22.13.13)(typescript@5.8.2)
       tailwindcss:
-        specifier: ^4.0.16
-        version: 4.0.16
+        specifier: ^4.0.17
+        version: 4.0.17
       typescript:
         specifier: ^5
         version: 5.8.2

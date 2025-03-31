@@ -28,7 +28,7 @@
 		"normalize.css": "^8.0.1",
 		"react": "^19",
 		"react-dom": "^19",
-		"sass": "^1.86.0"
+		"sass": "^1.86.1"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.8.0",

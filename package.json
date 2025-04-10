@@ -28,7 +28,8 @@
 		"normalize.css": "^8.0.1",
 		"react": "^19",
 		"react-dom": "^19",
-		"sass": "^1.86.3"
+		"sass": "^1.86.3",
+		"tailwind-merge": "^3.2.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.8.0",

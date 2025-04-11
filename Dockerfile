@@ -37,7 +37,6 @@ WORKDIR /app
 
 COPY --from=builder /sources/package.json /sources/pnpm-lock.yaml ./
 COPY --from=builder /sources/tsconfig.json ./
-COPY --from=builder /sources/tailwind.config.ts ./
 COPY --from=builder /sources/.next ./.next
 COPY --from=builder /sources/public ./public
 COPY --from=builder /sources/assets ./assets

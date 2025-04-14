@@ -68,12 +68,10 @@ export function useTelegramMock(): void {
 			initDataRaw = initDataRawMock;
 		}
 
-		// if (!themeParams || !initDataRaw) {
-		// 	console.error('Failed to retrieve launch parameters');
-		// 	return;
-		// }
-
-		// console.log(initDataRaw);
+		if (!themeParams || !initDataRaw) {
+			console.error('Failed to retrieve launch parameters');
+			return;
+		}
 
 		sessionStorage.setItem('env-mocked', '1');
 		mockTelegramEnv({

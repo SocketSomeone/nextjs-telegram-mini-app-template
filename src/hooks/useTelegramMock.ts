@@ -1,24 +1,27 @@
 import { useClientOnce } from '@/hooks/useClientOnce';
-import { isTMA, type LaunchParams, mockTelegramEnv, parseInitData, retrieveLaunchParams, } from '@telegram-apps/sdk-react';
+import { isTMA, mockTelegramEnv, retrieveLaunchParams, retrieveRawInitData, } from '@telegram-apps/sdk-react';
 
 /**
  * Mocks Telegram environment in development mode.
  */
 export function useTelegramMock(): void {
-	useClientOnce(() => {
-		if (!sessionStorage.getItem('env-mocked') && isTMA('simple')) {
+	useClientOnce(async () => {
+		if (!sessionStorage.getItem('env-mocked') && isTMA()) {
 			return;
 		}
 
 		// Determine which launch params should be applied. We could already
 		// apply them previously, or they may be specified on purpose using the
 		// default launch parameters transmission method.
-		let lp: LaunchParams | undefined;
+		let themeParams: string | undefined;
+		let initDataRaw: string | undefined;
 		try {
-			lp = retrieveLaunchParams();
+			const launchParams = retrieveLaunchParams();
+			themeParams = JSON.stringify(launchParams.tgWebAppThemeParams);
+			initDataRaw = retrieveRawInitData();
 		} catch (e) {
 			console.error('Failed to retrieve launch parameters:', e);
-			const initDataRaw = new URLSearchParams([
+			const initDataRawTest = new URLSearchParams([
 				[
 					'user',
 					JSON.stringify({
@@ -31,7 +34,7 @@ export function useTelegramMock(): void {
 						allows_write_to_pm: true,
 					}),
 				],
-				['auth_date', '1716922846'],
+				['auth_date', (new Date().getTime() / 1000 | 0).toString()],
 				[
 					'signature',
 					'6fbdaab833d39f54518bd5c3eb3f511d035e68cb',
@@ -45,31 +48,42 @@ export function useTelegramMock(): void {
 				['chat_instance', '8428209589180549439'],
 			]).toString();
 
-			lp = {
-				themeParams: {
-					accentTextColor: '#6ab2f2',
-					bgColor: '#17212b',
-					buttonColor: '#5288c1',
-					buttonTextColor: '#ffffff',
-					destructiveTextColor: '#ec3942',
-					headerBgColor: '#17212b',
-					hintColor: '#708499',
-					linkColor: '#6ab3f3',
-					secondaryBgColor: '#232e3c',
-					sectionBgColor: '#17212b',
-					sectionHeaderTextColor: '#6ab3f3',
-					subtitleTextColor: '#708499',
-					textColor: '#f5f5f5',
-				},
-				initData: parseInitData(initDataRaw),
-				initDataRaw,
-				version: '8',
-				platform: 'tdesktop',
-			};
+			const themeParamsTest = {
+				accent_text_color: '#6ab2f2',
+				bg_color: '#17212b',
+				button_color: '#5288c1',
+				button_text_color: '#ffffff',
+				destructive_text_color: '#ec3942',
+				header_bg_color: '#17212b',
+				hint_color: '#708499',
+				link_color: '#6ab3f3',
+				secondary_bg_color: '#232e3c',
+				section_bg_color: '#17212b',
+				section_header_text_color: '#6ab3f3',
+				subtitle_text_color: '#708499',
+				text_color: '#f5f5f5',
+			} as const;
+
+			themeParams = JSON.stringify(themeParamsTest);
+			initDataRaw = initDataRawTest;
 		}
 
+		// if (!themeParams || !initDataRaw) {
+		// 	console.error('Failed to retrieve launch parameters');
+		// 	return;
+		// }
+
+		// console.log(initDataRaw);
+
 		sessionStorage.setItem('env-mocked', '1');
-		mockTelegramEnv(lp);
+		mockTelegramEnv({
+			launchParams: new URLSearchParams([
+				['tgWebAppThemeParams', themeParams ?? ''],
+				['tgWebAppData', initDataRaw ?? ''],
+				['tgWebAppPlatform', 'tdesktop'],
+				['tgWebAppVersion', '8.4']
+			])
+		});
 		console.warn(
 			'⚠️ As long as the current environment was not considered as the Telegram-based one, it was mocked. Take a note, that you should not do it in production and current behavior is only specific to the development process. Environment mocking is also applied only in development mode. So, after building the application, you will not see this behavior and related warning, leading to crashing the application outside Telegram.',
 		);

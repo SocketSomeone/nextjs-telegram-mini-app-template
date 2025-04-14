@@ -1,5 +1,7 @@
 'use client';
 
+import '@telegram-apps/telegram-ui/dist/styles.css';
+
 import { Cell, Image, List, Section } from '@telegram-apps/telegram-ui';
 import { useTranslations } from 'next-intl';
 

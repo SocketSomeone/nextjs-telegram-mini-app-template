@@ -1,12 +1,7 @@
 'use client';
 
-import { type PropsWithChildren, useEffect } from 'react';
-import {
-	initData,
-	miniApp,
-	useLaunchParams,
-	useSignal,
-} from '@telegram-apps/sdk-react';
+import { type PropsWithChildren, useEffect, useMemo } from 'react';
+import { initData, miniApp, retrieveLaunchParams, useSignal, } from '@telegram-apps/sdk-react';
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import { AppRoot } from '@telegram-apps/telegram-ui';
 
@@ -29,7 +24,7 @@ function RootInner({children}: PropsWithChildren) {
 		useTelegramMock();
 	}
 
-	const lp = useLaunchParams();
+	const lp = useMemo(() => retrieveLaunchParams(), []);
 	const debug = isDev || lp.startParam === 'debug';
 
 	// Initialize the library.
@@ -46,14 +41,14 @@ function RootInner({children}: PropsWithChildren) {
 			return;
 		}
 
-		setLocale(initDataUser.languageCode).then();
+		setLocale(initDataUser.language_code).then();
 	}, [initDataUser]);
 
 	return (
 		<TonConnectUIProvider manifestUrl={`${window.location.origin}/tonconnect-manifest.json`}>
 			<AppRoot
 				appearance={isDark ? 'dark' : 'light'}
-				platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
+				platform={['macos', 'ios'].includes(lp.tgWebAppPlatform) ? 'ios' : 'base'}
 			>
 				{children}
 			</AppRoot>

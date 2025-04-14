@@ -1,12 +1,4 @@
-import {
-	backButton,
-	viewport,
-	themeParams,
-	miniApp,
-	initData,
-	$debug,
-	init as initSDK,
-} from '@telegram-apps/sdk-react';
+import { init as initSDK, initData, miniApp, mountBackButton, setDebug, themeParams, viewport, } from '@telegram-apps/sdk-react';
 
 
 /**
@@ -14,28 +6,37 @@ import {
  */
 export function init(debug: boolean): void {
 	// Set @telegram-apps/sdk-react debug mode.
-	$debug.set(debug);
+	setDebug(debug);
 
 	// Initialize special event handlers for Telegram Desktop, Android, iOS, etc.
 	// Also, configure the package.
 	initSDK();
 
 	// Mount all components used in the project.
-	if (backButton.isSupported()) {
-		backButton.mount();
-	}
-	miniApp.mount();
-	themeParams.mount();
-	initData.restore();
-	void viewport.mount().then(() => {
-		viewport.bindCssVars();
-	}).catch(e => {
-		console.error('Something went wrong mounting the viewport', e);
-	});
 
-	// Define components-related CSS variables.
-	miniApp.bindCssVars();
-	themeParams.bindCssVars();
+	mountBackButton.ifAvailable()
+
+	if (!miniApp.isMounted()) {
+		miniApp.mountSync();
+		miniApp.bindCssVars();
+		themeParams.bindCssVars();
+	}
+
+	if (!themeParams.isMounted()) {
+		themeParams.mountSync();
+	}
+
+	initData.restore();
+
+	if (!viewport.isMounting() && !viewport.isMounted()) {
+		void viewport.mount()
+			.then(() => {
+				viewport.bindCssVars();
+			})
+			.catch(e => {
+				console.error('Something went wrong mounting the viewport', e);
+			});
+	}
 
 
 	// Add Eruda if needed.

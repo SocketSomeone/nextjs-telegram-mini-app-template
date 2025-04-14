@@ -21,7 +21,7 @@ export function useTelegramMock(): void {
 			initDataRaw = retrieveRawInitData();
 		} catch (e) {
 			console.error('Failed to retrieve launch parameters:', e);
-			const initDataRawTest = new URLSearchParams([
+			const initDataRawMock = new URLSearchParams([
 				[
 					'user',
 					JSON.stringify({
@@ -48,7 +48,7 @@ export function useTelegramMock(): void {
 				['chat_instance', '8428209589180549439'],
 			]).toString();
 
-			const themeParamsTest = {
+			const themeParamsMock = {
 				accent_text_color: '#6ab2f2',
 				bg_color: '#17212b',
 				button_color: '#5288c1',
@@ -64,8 +64,8 @@ export function useTelegramMock(): void {
 				text_color: '#f5f5f5',
 			} as const;
 
-			themeParams = JSON.stringify(themeParamsTest);
-			initDataRaw = initDataRawTest;
+			themeParams = JSON.stringify(themeParamsMock);
+			initDataRaw = initDataRawMock;
 		}
 
 		// if (!themeParams || !initDataRaw) {

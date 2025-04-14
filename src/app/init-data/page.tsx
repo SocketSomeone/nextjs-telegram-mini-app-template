@@ -8,13 +8,12 @@ import { DisplayData, type DisplayDataRow, } from '@/components/DisplayData/Disp
 import { Page } from '@/components/Page';
 
 function getUserRows(user: User): DisplayDataRow[] {
-	console.log('user', user);
-	return Object.entries(user).map(([title, value]) => ({ title, value }));
+	return Object.entries(user).map(([title, value]) => ({title, value}));
 }
 
 export default function InitDataPage() {
-  const initDataRaw = useSignal(initData.raw);
-  const initDataState = useSignal(initData.state);
+	const initDataRaw = useSignal(initData.raw);
+	const initDataState = useSignal(initData.state);
 
 	const initDataRows = useMemo<DisplayDataRow[] | undefined>(() => {
 		if (!initDataState || !initDataRaw) {
@@ -49,7 +48,7 @@ export default function InitDataPage() {
 	const chatRows = useMemo<DisplayDataRow[] | undefined>(() => {
 		return !initDataState?.chat
 			? undefined
-			: Object.entries(initDataState.chat).map(([title, value]) => ({ title, value }));
+			: Object.entries(initDataState.chat).map(([title, value]) => ({title, value}));
 	}, [initDataState]);
 
 	if (!initDataRows) {

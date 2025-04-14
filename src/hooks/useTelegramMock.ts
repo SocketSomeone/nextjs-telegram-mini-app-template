@@ -76,8 +76,8 @@ export function useTelegramMock(): void {
 		sessionStorage.setItem('env-mocked', '1');
 		mockTelegramEnv({
 			launchParams: new URLSearchParams([
-				['tgWebAppThemeParams', themeParams ?? ''],
-				['tgWebAppData', initDataRaw ?? ''],
+				['tgWebAppThemeParams', themeParams],
+				['tgWebAppData', initDataRaw],
 				['tgWebAppPlatform', 'tdesktop'],
 				['tgWebAppVersion', '8']
 			])

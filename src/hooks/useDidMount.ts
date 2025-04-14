@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
  * @return True, if component was mounted.
  */
 export function useDidMount(): boolean {
-  const [didMount, setDidMount] = useState(false);
+	const [didMount, setDidMount] = useState(false);
 
-  useEffect(() => {
-    setDidMount(true);
-  }, []);
+	useEffect(() => {
+		setDidMount(true);
+	}, []);
 
-  return didMount;
+	return didMount;
 }

@@ -1,15 +1,15 @@
 .display-data__header {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 .display-data__line {
-  padding: 16px 24px;
+	padding: 16px 24px;
 }
 
 .display-data__line-title {
-  color: var(--tg-theme-subtitle-text-color);
+	color: var(--tg-theme-subtitle-text-color);
 }
 
 .display-data__line-value {
-  word-break: break-word;
+	word-break: break-word;
 }

@@ -3,22 +3,22 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
-  --background-image-gradient-conic: conic-gradient(
-    from 180deg at 50% 50%,
-    var(--tw-gradient-stops)
-  );
+	--background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+	--background-image-gradient-conic: conic-gradient(
+		from 180deg at 50% 50%,
+		var(--tw-gradient-stops)
+	);
 
-  --height-viewport-stable: var(--tg-viewport-stable-height);
-  --height-viewport: var(--tg-viewport-height);
+	--height-viewport-stable: var(--tg-viewport-stable-height);
+	--height-viewport: var(--tg-viewport-height);
 
-  --color-background: var(--tg-theme-bg-color);
-  --color-text: var(--tg-theme-text-color);
-  --color-hint: var(--tg-theme-hint-color);
-  --color-link: var(--tg-theme-link-color);
-  --color-button: var(--tg-theme-button-color);
-  --color-button-text: var(--tg-theme-button-text-color);
-  --color-secondary-bg: var(--tg-theme-secondary-bg-color);
+	--color-background: var(--tg-theme-bg-color);
+	--color-text: var(--tg-theme-text-color);
+	--color-hint: var(--tg-theme-hint-color);
+	--color-link: var(--tg-theme-link-color);
+	--color-button: var(--tg-theme-button-color);
+	--color-button-text: var(--tg-theme-button-text-color);
+	--color-secondary-bg: var(--tg-theme-secondary-bg-color);
 }
 
 /*
@@ -30,15 +30,15 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 }
 
 body {
-  background: var(--tg-theme-secondary-bg-color, white);
+	background: var(--tg-theme-secondary-bg-color, white);
 }

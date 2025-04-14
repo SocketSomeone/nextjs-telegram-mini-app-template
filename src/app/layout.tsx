@@ -10,22 +10,22 @@ import 'normalize.css/normalize.css';
 import './_assets/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Your Application Title Goes Here',
-  description: 'Your application description goes here',
+	title: 'Your Application Title Goes Here',
+	description: 'Your application description goes here',
 };
 
-export default async function RootLayout({ children }: PropsWithChildren) {
-  const locale = await getLocale();
+export default async function RootLayout({children}: PropsWithChildren) {
+	const locale = await getLocale();
 
-  return (
-    <html lang={locale}>
-    <body>
-      <I18nProvider>
-        <Root>
-          {children}
-        </Root>
-      </I18nProvider>
-    </body>
-    </html>
-  );
+	return (
+		<html lang={locale}>
+		<body>
+		<I18nProvider>
+			<Root>
+				{children}
+			</Root>
+		</I18nProvider>
+		</body>
+		</html>
+	);
 }

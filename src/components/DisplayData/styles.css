@@ -13,4 +13,5 @@
 .display-data__line-value {
 	word-break: break-word;
 	display: flex;
+	margin-top: 4px;
 }

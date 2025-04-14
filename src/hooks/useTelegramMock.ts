@@ -81,7 +81,7 @@ export function useTelegramMock(): void {
 				['tgWebAppThemeParams', themeParams ?? ''],
 				['tgWebAppData', initDataRaw ?? ''],
 				['tgWebAppPlatform', 'tdesktop'],
-				['tgWebAppVersion', '8.4']
+				['tgWebAppVersion', '8']
 			])
 		});
 		console.warn(

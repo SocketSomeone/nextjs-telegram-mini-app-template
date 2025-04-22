@@ -25,10 +25,10 @@ importers:
         version: 3.4.1
       next:
         specifier: ^15.3.1
-        version: 15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.86.3)
+        version: 15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0)
       next-intl:
         specifier: ^4.0.2
-        version: 4.0.2(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.86.3))(react@19.1.0)(typescript@5.8.3)
+        version: 4.0.2(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0))(react@19.1.0)(typescript@5.8.3)
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -39,8 +39,8 @@ importers:
         specifier: ^19
         version: 19.1.0(react@19.1.0)
       sass:
-        specifier: ^1.86.3
-        version: 1.86.3
+        specifier: ^1.87.0
+        version: 1.87.0
       tailwind-merge:
         specifier: ^3.2.0
         version: 3.2.0
@@ -1741,6 +1741,10 @@ packages:
     resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
     engines: {node: '>=8'}
 
+  detect-libc@2.0.4:
+    resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
+    engines: {node: '>=8'}
+
   detect-node-es@1.1.0:
     resolution: {integrity: sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==}
 
@@ -3119,8 +3123,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.86.3:
-    resolution: {integrity: sha512-iGtg8kus4GrsGLRDLRBRHY9dNVA78ZaS7xr01cWnS7PEMQyFtTqBiyCrfpTYTZXRWM94akzckYjh8oADfFNTzw==}
+  sass@1.87.0:
+    resolution: {integrity: sha512-d0NoFH4v6SjEK7BoX810Jsrhj7IQSYHAHLi/iSpgqKc7LaIDshFRlSg5LOymf9FqQhxEHs2W5ZQXlvy0KD45Uw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -5218,7 +5222,10 @@ snapshots:
   detect-libc@1.0.3:
     optional: true
 
-  detect-libc@2.0.3: {}
+  detect-libc@2.0.3:
+    optional: true
+
+  detect-libc@2.0.4: {}
 
   detect-node-es@1.1.0: {}
 
@@ -6143,7 +6150,7 @@ snapshots:
 
   lightningcss@1.29.2:
     dependencies:
-      detect-libc: 2.0.3
+      detect-libc: 2.0.4
     optionalDependencies:
       lightningcss-darwin-arm64: 1.29.2
       lightningcss-darwin-x64: 1.29.2
@@ -6300,17 +6307,17 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  next-intl@4.0.2(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.86.3))(react@19.1.0)(typescript@5.8.3):
+  next-intl@4.0.2(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0))(react@19.1.0)(typescript@5.8.3):
     dependencies:
       '@formatjs/intl-localematcher': 0.5.10
       negotiator: 1.0.0
-      next: 15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.86.3)
+      next: 15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0)
       react: 19.1.0
       use-intl: 4.0.2(react@19.1.0)
     optionalDependencies:
       typescript: 5.8.3
 
-  next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.86.3):
+  next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0):
     dependencies:
       '@next/env': 15.3.1
       '@swc/counter': 0.1.3
@@ -6330,7 +6337,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 15.3.1
       '@next/swc-win32-arm64-msvc': 15.3.1
       '@next/swc-win32-x64-msvc': 15.3.1
-      sass: 1.86.3
+      sass: 1.87.0
       sharp: 0.34.1
     transitivePeerDependencies:
       - '@babel/core'
@@ -6772,7 +6779,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.86.3:
+  sass@1.87.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.1

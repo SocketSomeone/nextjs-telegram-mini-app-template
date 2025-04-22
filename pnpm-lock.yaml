@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@telegram-apps/sdk-react':
-        specifier: 3.2.0
-        version: 3.2.0(@types/react@19.1.2)(react@19.1.0)(typescript@5.8.3)
+        specifier: 3.2.1
+        version: 3.2.1(@types/react@19.1.2)(react@19.1.0)(typescript@5.8.3)
       '@telegram-apps/telegram-ui':
         specifier: ^2.1.8
         version: 2.1.8(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -1037,14 +1037,14 @@ packages:
   '@telegram-apps/bridge@1.9.2':
     resolution: {integrity: sha512-SJLcNWLXhbbZr9MiqFH/g2ceuitSJKMxUIZysK4zUNyTUNuonrQG80Q/yrO+XiNbKUj8WdDNM86NBARhuyyinQ==}
 
-  '@telegram-apps/bridge@2.7.0':
-    resolution: {integrity: sha512-dW9FoUuC+DDYponosVGzCcq6LBPDN2j0y7be1Ezxf8QfjzifJefBejnRx5Di6gXW+u4CeIqCmI/nCmonwMIJAw==}
+  '@telegram-apps/bridge@2.7.1':
+    resolution: {integrity: sha512-HZm7F7S5mD5Ch+90Ok6kDS0tTnaFS6JynSgucRwMrS02GHlLm+pn5U1GV6GVKW+wG42+qDRzHr8d7k6WA289Xg==}
 
   '@telegram-apps/navigation@1.0.13':
     resolution: {integrity: sha512-TsUueB5LQp77GQHoMa93nq26Uw7GJjrFCPbyseMVU7aBBxAc+8CV2IYytRwcVp5sv/q7ThK5X4JaKn2V1yBHDQ==}
 
-  '@telegram-apps/sdk-react@3.2.0':
-    resolution: {integrity: sha512-Fp0DHlK+NkgDsNPWzh6bn6R981pqFrZCVM3TXBRcKVC2WQybheQVJfZB0Xi8cFNTQMH4g7wubIimjQJH/juohw==}
+  '@telegram-apps/sdk-react@3.2.1':
+    resolution: {integrity: sha512-kvtDJqxK5MHeJjiRX5HEBd+aonx7+0rXmJFMJqjJBa59GOFvi0LccRCw7rD1cjaNT2WavENNt5PIO+WeCdoVTw==}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0 || ^19.0.0
       react: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -1052,8 +1052,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@telegram-apps/sdk@3.7.1':
-    resolution: {integrity: sha512-j5Q8ohUpdwrx831zy+PS4utO90Unxy/2IyEuroNyVndIR6b/87AxxvUp7fT8XP98urrFxtzfK+0WhWWCm7KKyQ==}
+  '@telegram-apps/sdk@3.8.0':
+    resolution: {integrity: sha512-1oxDAFmR+Tr1aOxCrOOwzWGsufCwTSog8HieG7buUJogvxnN7MLVLspU6qqF5iYEUbaf1W04tIjO3rVLMZd0Tg==}
 
   '@telegram-apps/signals@1.1.1':
     resolution: {integrity: sha512-vz37r8lemGpPzDiBRfqpXYBynzmy3SFnY6zfHsTZABTYYt0b0WQZyU5mFDqqqugGhka78Gy11xmr9csgy4YgGA==}
@@ -1783,9 +1783,6 @@ packages:
 
   error-ex@1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
-
-  error-kid@0.0.4:
-    resolution: {integrity: sha512-x+yQhY56SorLMnX6kOf+z3JCv2QBurcWEDcIjgxYtVr4fGeCfAtOdZOCyWttkHHDFPtL2PqnaRUmphbmALJd9w==}
 
   error-kid@0.0.7:
     resolution: {integrity: sha512-8mFs7ZaDWlBFgjOy4lHLMCe2+KZfZXGx5GOgh2VQ/M1CCIvSWzbl2OMl+5fdZgrgoUfhTeF+NPhmqfEvUhN8yw==}
@@ -3485,6 +3482,14 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  valibot@1.0.0:
+    resolution: {integrity: sha512-1Hc0ihzWxBar6NGeZv7fPLY0QuxFMyxwYR2sF1Blu7Wq7EnremwY2W02tit2ij2VJT8HcSkHAQqmFfl77f73Yw==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   valibot@1.0.0-beta.14:
     resolution: {integrity: sha512-tLyV2rE5QL6U29MFy3xt4AqMrn+/HErcp2ZThASnQvPMwfSozjV1uBGKIGiegtZIGjinJqn0SlBdannf18wENA==}
     peerDependencies:
@@ -4447,16 +4452,16 @@ snapshots:
       '@telegram-apps/transformers': 1.2.2
       '@telegram-apps/types': 1.2.1
 
-  '@telegram-apps/bridge@2.7.0(typescript@5.8.3)':
+  '@telegram-apps/bridge@2.7.1(typescript@5.8.3)':
     dependencies:
       '@telegram-apps/signals': 1.1.1
       '@telegram-apps/toolkit': 2.0.0
       '@telegram-apps/transformers': 2.2.0(typescript@5.8.3)
       '@telegram-apps/types': 2.0.0
       better-promises: 0.4.1
-      error-kid: 0.0.4
+      error-kid: 0.0.7
       mitt: 3.0.1
-      valibot: 1.0.0-beta.14(typescript@5.8.3)
+      valibot: 1.0.0(typescript@5.8.3)
     transitivePeerDependencies:
       - typescript
 
@@ -4466,26 +4471,26 @@ snapshots:
       '@telegram-apps/signals': 1.1.1
       '@telegram-apps/toolkit': 1.1.1
 
-  '@telegram-apps/sdk-react@3.2.0(@types/react@19.1.2)(react@19.1.0)(typescript@5.8.3)':
+  '@telegram-apps/sdk-react@3.2.1(@types/react@19.1.2)(react@19.1.0)(typescript@5.8.3)':
     dependencies:
-      '@telegram-apps/sdk': 3.7.1(typescript@5.8.3)
+      '@telegram-apps/sdk': 3.8.0(typescript@5.8.3)
       react: 19.1.0
     optionalDependencies:
       '@types/react': 19.1.2
     transitivePeerDependencies:
       - typescript
 
-  '@telegram-apps/sdk@3.7.1(typescript@5.8.3)':
+  '@telegram-apps/sdk@3.8.0(typescript@5.8.3)':
     dependencies:
-      '@telegram-apps/bridge': 2.7.0(typescript@5.8.3)
+      '@telegram-apps/bridge': 2.7.1(typescript@5.8.3)
       '@telegram-apps/navigation': 1.0.13
       '@telegram-apps/signals': 1.1.1
       '@telegram-apps/toolkit': 2.0.0
       '@telegram-apps/transformers': 2.2.0(typescript@5.8.3)
       '@telegram-apps/types': 2.0.0
       better-promises: 0.4.1
-      error-kid: 0.0.4
-      valibot: 1.0.0-beta.14(typescript@5.8.3)
+      error-kid: 0.0.7
+      valibot: 1.0.0(typescript@5.8.3)
     transitivePeerDependencies:
       - typescript
 
@@ -5256,8 +5261,6 @@ snapshots:
   error-ex@1.3.2:
     dependencies:
       is-arrayish: 0.2.1
-
-  error-kid@0.0.4: {}
 
   error-kid@0.0.7: {}
 
@@ -7189,6 +7192,10 @@ snapshots:
       '@types/react': 19.1.2
 
   util-deprecate@1.0.2: {}
+
+  valibot@1.0.0(typescript@5.8.3):
+    optionalDependencies:
+      typescript: 5.8.3
 
   valibot@1.0.0-beta.14(typescript@5.8.3):
     optionalDependencies:

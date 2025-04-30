@@ -49,7 +49,7 @@
 		"lint-staged": "^15.5.1",
 		"postcss": "^8",
 		"release-it": "^19.0.1",
-		"tailwindcss": "^4.1.4",
+		"tailwindcss": "^4.1.5",
 		"typescript": "^5"
 	}
 }

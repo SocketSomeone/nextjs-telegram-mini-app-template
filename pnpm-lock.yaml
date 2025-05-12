@@ -25,10 +25,10 @@ importers:
         version: 3.4.1
       next:
         specifier: ^15.3.2
-        version: 15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0)
+        version: 15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.88.0)
       next-intl:
         specifier: ^4.1.0
-        version: 4.1.0(next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0))(react@19.1.0)(typescript@5.8.3)
+        version: 4.1.0(next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.88.0))(react@19.1.0)(typescript@5.8.3)
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -39,8 +39,8 @@ importers:
         specifier: ^19
         version: 19.1.0(react@19.1.0)
       sass:
-        specifier: ^1.87.0
-        version: 1.87.0
+        specifier: ^1.88.0
+        version: 1.88.0
       tailwind-merge:
         specifier: ^3.2.0
         version: 3.2.0
@@ -2340,8 +2340,8 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
-  immutable@5.1.1:
-    resolution: {integrity: sha512-3jatXi9ObIsPGr3N5hGw/vWWcTkq6hUYhpQz4k0wLC+owqWi/LiugIw9x0EdNZ2yGedKN/HzePiBvaJRXa0Ujg==}
+  immutable@5.1.2:
+    resolution: {integrity: sha512-qHKXW1q6liAk1Oys6umoaZbDRqjcjgSrbnrifHsfsttza7zcvRAsL7mMV6xWcyhwQy7Xj5v4hhbr6b+iDYwlmQ==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -3327,8 +3327,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.87.0:
-    resolution: {integrity: sha512-d0NoFH4v6SjEK7BoX810Jsrhj7IQSYHAHLi/iSpgqKc7LaIDshFRlSg5LOymf9FqQhxEHs2W5ZQXlvy0KD45Uw==}
+  sass@1.88.0:
+    resolution: {integrity: sha512-sF6TWQqjFvr4JILXzG4ucGOLELkESHL+I5QJhh7CNaE+Yge0SI+ehCatsXhJ7ymU1hAFcIS3/PBpjdIbXoyVbg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3545,9 +3545,6 @@ packages:
 
   tailwind-merge@3.2.0:
     resolution: {integrity: sha512-FQT/OVqCD+7edmmJpsgCsY820RTD5AkBryuG5IUqR5YQZSdj5xlH5nLgH7YPths7WsLPSpSBNneJdM8aS8aeFA==}
-
-  tailwindcss@4.1.5:
-    resolution: {integrity: sha512-nYtSPfWGDiWgCkwQG/m+aX83XCwf62sBgg3bIlNiiOcggnS1x3uVRDAuyelBFL+vJdOPPCGElxv9DjHJjRHiVA==}
 
   tailwindcss@4.1.6:
     resolution: {integrity: sha512-j0cGLTreM6u4OWzBeLBpycK0WIh8w7kSwcUsQZoGLHZ7xDTdM69lN64AgoIEEwFi0tnhs4wSykUa5YWxAzgFYg==}
@@ -6287,7 +6284,7 @@ snapshots:
 
   ignore@5.3.2: {}
 
-  immutable@5.1.1: {}
+  immutable@5.1.2: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -6764,17 +6761,17 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  next-intl@4.1.0(next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0))(react@19.1.0)(typescript@5.8.3):
+  next-intl@4.1.0(next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.88.0))(react@19.1.0)(typescript@5.8.3):
     dependencies:
       '@formatjs/intl-localematcher': 0.5.10
       negotiator: 1.0.0
-      next: 15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0)
+      next: 15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.88.0)
       react: 19.1.0
       use-intl: 4.1.0(react@19.1.0)
     optionalDependencies:
       typescript: 5.8.3
 
-  next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.87.0):
+  next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.88.0):
     dependencies:
       '@next/env': 15.3.2
       '@swc/counter': 0.1.3
@@ -6794,7 +6791,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 15.3.2
       '@next/swc-win32-arm64-msvc': 15.3.2
       '@next/swc-win32-x64-msvc': 15.3.2
-      sass: 1.87.0
+      sass: 1.88.0
       sharp: 0.34.1
     transitivePeerDependencies:
       - '@babel/core'
@@ -7278,10 +7275,10 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.87.0:
+  sass@1.88.0:
     dependencies:
       chokidar: 4.0.3
-      immutable: 5.1.1
+      immutable: 5.1.2
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.1
@@ -7559,8 +7556,6 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   tailwind-merge@3.2.0: {}
-
-  tailwindcss@4.1.5: {}
 
   tailwindcss@4.1.6: {}
 

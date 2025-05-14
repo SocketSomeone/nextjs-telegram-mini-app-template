@@ -1,19 +1,22 @@
 'use client';
 
 import { useMemo } from 'react';
-import { initData, type User, useSignal, } from '@telegram-apps/sdk-react';
+import {
+	initDataRaw as _initDataRaw,
+	initDataState as _initDataState, type User, useSignal,
+} from '@telegram-apps/sdk-react';
 import { List, Placeholder } from '@telegram-apps/telegram-ui';
 
 import { DisplayData, type DisplayDataRow, } from '@/components/DisplayData/DisplayData';
 import { Page } from '@/components/Page';
 
 function getUserRows(user: User): DisplayDataRow[] {
-	return Object.entries(user).map(([title, value]) => ({title, value}));
+	return Object.entries(user).map(([title, value]) => ({ title, value }));
 }
 
 export default function InitDataPage() {
-	const initDataRaw = useSignal(initData.raw);
-	const initDataState = useSignal(initData.state);
+	const initDataRaw = useSignal(_initDataRaw);
+	const initDataState = useSignal(_initDataState);
 
 	const initDataRows = useMemo<DisplayDataRow[] | undefined>(() => {
 		if (!initDataState || !initDataRaw) {
@@ -21,12 +24,12 @@ export default function InitDataPage() {
 		}
 
 		return [
-			{title: 'raw', value: initDataRaw},
+			{ title: 'raw', value: initDataRaw },
 			...Object.entries(initDataState).reduce<DisplayDataRow[]>((acc, [title, value]) => {
 				if (value instanceof Date) {
-					acc.push({title, value: value.toISOString()});
+					acc.push({ title, value: value.toISOString() });
 				} else if (!value || typeof value !== 'object') {
-					acc.push({title, value});
+					acc.push({ title, value });
 				}
 				return acc;
 			}, []),
@@ -48,7 +51,7 @@ export default function InitDataPage() {
 	const chatRows = useMemo<DisplayDataRow[] | undefined>(() => {
 		return !initDataState?.chat
 			? undefined
-			: Object.entries(initDataState.chat).map(([title, value]) => ({title, value}));
+			: Object.entries(initDataState.chat).map(([title, value]) => ({ title, value }));
 	}, [initDataState]);
 
 	if (!initDataRows) {
@@ -61,7 +64,7 @@ export default function InitDataPage() {
 					<img
 						alt="Telegram sticker"
 						src="https://xelene.me/telegram.gif"
-						style={{display: 'block', width: '144px', height: '144px'}}
+						style={{ display: 'block', width: '144px', height: '144px' }}
 					/>
 				</Placeholder>
 			</Page>

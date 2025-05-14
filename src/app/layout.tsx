@@ -18,7 +18,7 @@ export default async function RootLayout({children}: PropsWithChildren) {
 	const locale = await getLocale();
 
 	return (
-		<html lang={locale}>
+		<html lang={locale} suppressHydrationWarning>
 		<body>
 		<I18nProvider>
 			<Root>

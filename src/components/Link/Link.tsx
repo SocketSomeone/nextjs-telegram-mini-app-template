@@ -14,29 +14,33 @@ export const Link: FC<LinkProps> = ({
 										href,
 										...rest
 									}) => {
-	const onClick = useCallback<MouseEventHandler<HTMLAnchorElement>>((e) => {
-		propsOnClick?.(e);
+	const onClick = useCallback<MouseEventHandler<HTMLAnchorElement>>(
+		(e) => {
+			propsOnClick?.(e);
 
-		// Compute if target path is external. In this case we would like to open link using
-		// TMA method.
-		let path: string;
-		if (typeof href === 'string') {
-			path = href;
-		} else {
-			const {search = '', pathname = '', hash = ''} = href;
-			path = `${pathname}?${search}#${hash}`;
-		}
+			// Compute if target path is external. In this case we would like to open link using
+			// TMA method.
+			let path: string;
+			if (typeof href === 'string') {
+				path = href;
+			} else {
+				const { search = '', pathname = '', hash = '' } = href;
+				path = `${pathname}?${search}#${hash}`;
+			}
 
-		const targetUrl = new URL(path, window.location.toString());
-		const currentUrl = new URL(window.location.toString());
-		const isExternal = targetUrl.protocol !== currentUrl.protocol
-			|| targetUrl.host !== currentUrl.host;
+			const targetUrl = new URL(path, window.location.toString());
+			const currentUrl = new URL(window.location.toString());
+			const isExternal =
+				targetUrl.protocol !== currentUrl.protocol ||
+				targetUrl.host !== currentUrl.host;
 
-		if (isExternal) {
-			e.preventDefault();
-			openLink(targetUrl.toString());
-		}
-	}, [href, propsOnClick]);
+			if (isExternal) {
+				e.preventDefault();
+				openLink(targetUrl.toString());
+			}
+		},
+		[href, propsOnClick],
+	);
 
 	return (
 		<NextLink

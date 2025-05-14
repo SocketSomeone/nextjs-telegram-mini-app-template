@@ -1,36 +1,24 @@
-'use client';
+"use client";
 
-import { type PropsWithChildren, useEffect, useMemo } from 'react';
-import { initData, miniApp, retrieveLaunchParams, useSignal, } from '@telegram-apps/sdk-react';
-import { TonConnectUIProvider } from '@tonconnect/ui-react';
-import { AppRoot } from '@telegram-apps/telegram-ui';
+import { type PropsWithChildren, useEffect } from "react";
+import {
+	initData,
+	miniApp,
+	useLaunchParams,
+	useSignal,
+} from "@telegram-apps/sdk-react";
+import { TonConnectUIProvider } from "@tonconnect/ui-react";
+import { AppRoot } from "@telegram-apps/telegram-ui";
 
-import { ErrorBoundary } from '@/components/ErrorBoundary';
-import { ErrorPage } from '@/components/ErrorPage';
-import { useTelegramMock } from '@/hooks/useTelegramMock';
-import { useDidMount } from '@/hooks/useDidMount';
-import { useClientOnce } from '@/hooks/useClientOnce';
-import { setLocale } from '@/core/i18n/locale';
-import { init } from '@/core/init';
+import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { ErrorPage } from "@/components/ErrorPage";
+import { useDidMount } from "@/hooks/useDidMount";
+import { setLocale } from "@/core/i18n/locale";
 
-import './styles.css';
+import "./styles.css";
 
-function RootInner({children}: PropsWithChildren) {
-	const isDev = process.env.NODE_ENV === 'development';
-
-	// Mock Telegram environment in development mode if needed.
-	if (isDev) {
-		// eslint-disable-next-line react-hooks/rules-of-hooks
-		useTelegramMock();
-	}
-
-	const lp = useMemo(() => retrieveLaunchParams(), []);
-	const debug = isDev || lp.startParam === 'debug';
-
-	// Initialize the library.
-	useClientOnce(() => {
-		init(debug);
-	});
+function RootInner({ children }: PropsWithChildren) {
+	const lp = useLaunchParams();
 
 	const isDark = useSignal(miniApp.isDark);
 	const initDataUser = useSignal(initData.user);
@@ -45,10 +33,12 @@ function RootInner({children}: PropsWithChildren) {
 	}, [initDataUser]);
 
 	return (
-		<TonConnectUIProvider manifestUrl={`${window.location.origin}/tonconnect-manifest.json`}>
+		<TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
 			<AppRoot
-				appearance={isDark ? 'dark' : 'light'}
-				platform={['macos', 'ios'].includes(lp.tgWebAppPlatform) ? 'ios' : 'base'}
+				appearance={isDark ? "dark" : "light"}
+				platform={
+					["macos", "ios"].includes(lp.tgWebAppPlatform) ? "ios" : "base"
+				}
 			>
 				{children}
 			</AppRoot>
@@ -64,7 +54,9 @@ export function Root(props: PropsWithChildren) {
 
 	return didMount ? (
 		<ErrorBoundary fallback={ErrorPage}>
-			<RootInner {...props}/>
+			<RootInner {...props} />
 		</ErrorBoundary>
-	) : <div className="root__loading">Loading</div>;
+	) : (
+		<div className="root__loading">Loading</div>
+	);
 }

@@ -26,8 +26,8 @@ export default function Home() {
 							before={
 								<Image
 									src={tonSvg.src}
-									alt="TON Connect"
-									style={{backgroundColor: '#007AFF'}}
+									style={{ backgroundColor: "#007AFF" }}
+									alt="TON Connect Logo"
 								/>
 							}
 							subtitle="Connect your TON wallet"

@@ -1,16 +1,20 @@
-import { cn } from '../../utils';
-import { type RGB as RGBType } from '@telegram-apps/sdk-react';
-import { FC, JSX } from 'react';
+import type { RGB as RGBType } from "@telegram-apps/sdk-react";
+import { FC, JSX } from "react";
 
-import './styles.css';
+import { bem } from "@/css/bem";
+import { classNames } from "@/css/classnames";
 
-export type RGBProps = JSX.IntrinsicElements['div'] & {
+import "./styles.css";
+
+const [b, e] = bem("rgb");
+
+export type RGBProps = JSX.IntrinsicElements["div"] & {
 	color: RGBType;
 };
 
-export const RGB: FC<RGBProps> = ({color, className, ...rest}) => (
-	<span {...rest} className={cn('rgb', className)}>
-    <i className="rgb__icon" style={{backgroundColor: color}}/>
+export const RGB: FC<RGBProps> = ({ color, className, ...rest }) => (
+	<span {...rest} className={classNames(b(), className)}>
+    <i className={e("icon")} style={{ backgroundColor: color }} />
 		{color}
   </span>
 );

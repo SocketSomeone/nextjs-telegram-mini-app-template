@@ -1,6 +1,7 @@
 'use client';
 
 import { openLink } from '@telegram-apps/sdk-react';
+import { bem } from '@/css/bem';
 import { Page } from '@/components/Page';
 import { TonConnectButton, useTonWallet } from '@tonconnect/ui-react';
 import {
@@ -18,7 +19,7 @@ import { DisplayData } from '@/components/DisplayData/DisplayData';
 
 import './styles.css';
 
-const [, e] = bem("ton-connect-page");
+const [, e] = bem('ton-connect-page');
 
 export default function TONConnectPage() {
 	const wallet = useTonWallet();
@@ -26,7 +27,7 @@ export default function TONConnectPage() {
 		return (
 			<Page>
 				<Placeholder
-					className={e("placeholder")}
+					className={e('placeholder')}
 					header="TON Connect"
 					description={
 						<>
@@ -34,7 +35,7 @@ export default function TONConnectPage() {
 								To display the data related to the TON Connect, it is required
 								to connect your wallet
 							</Text>
-							<TonConnectButton className={e("button")}/>
+							<TonConnectButton className={e('button')}/>
 						</>
 					}
 				/>
@@ -74,7 +75,7 @@ export default function TONConnectPage() {
 								<Title level="3">{wallet.name}</Title>
 							</Cell>
 						</Section>
-						<TonConnectButton className={e("button-connected")} />
+						<TonConnectButton className={e('button-connected')}/>
 					</>
 				)}
 				<DisplayData

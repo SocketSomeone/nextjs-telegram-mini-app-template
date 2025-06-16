@@ -21,8 +21,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       eruda:
-        specifier: ^3.4.1
-        version: 3.4.1
+        specifier: ^3.4.3
+        version: 3.4.3
       next:
         specifier: ^15.3.2
         version: 15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)
@@ -1849,8 +1849,8 @@ packages:
   error-kid@0.0.7:
     resolution: {integrity: sha512-8mFs7ZaDWlBFgjOy4lHLMCe2+KZfZXGx5GOgh2VQ/M1CCIvSWzbl2OMl+5fdZgrgoUfhTeF+NPhmqfEvUhN8yw==}
 
-  eruda@3.4.1:
-    resolution: {integrity: sha512-RmaO5yD97URY/9Q0lye3cmmNPoXNKreeePIw7c/zllbscR92CjGFZFuQ70+0fLIvLcKW3Xha8DS8NFhmeNbEBQ==}
+  eruda@3.4.3:
+    resolution: {integrity: sha512-J2TsF4dXSspOXev5bJ6mljv0dRrxj21wklrDzbvPmYaEmVoC+2psylyRi70nUPFh1mTQfIBsSusUtAMZtUN+/w==}
 
   es-abstract@1.24.0:
     resolution: {integrity: sha512-WSzPgsdLtTcQwm4CROfS5ju2Wa1QQcVeT37jFjYzdFz1r9ahadC8B8/a4qxJxM+09F18iumCdRmlr96ZYkQvEg==}
@@ -5432,7 +5432,7 @@ snapshots:
 
   error-kid@0.0.7: {}
 
-  eruda@3.4.1: {}
+  eruda@3.4.3: {}
 
   es-abstract@1.24.0:
     dependencies:

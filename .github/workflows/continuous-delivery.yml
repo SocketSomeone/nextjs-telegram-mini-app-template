@@ -1,77 +1,83 @@
 name: Continuous Delivery
 
 on:
-    push:
+  push:
 
 concurrency:
-    group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
-    cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 
 env:
-    REGISTRY: ghcr.io
-    ORGANIZATION: socketsomeone
-    SERVICE: ${{ github.event.repository.name }}
+  REGISTRY: ghcr.io
+  ORGANIZATION: ${{ github.repository_owner }}
+  SERVICE: ${{ github.event.repository.name }}
 
 jobs:
-    build-and-push-image:
-        name: Publish Docker Image
-        strategy:
-            max-parallel: 4
-            fail-fast: true
-            matrix:
-                os: [ubuntu-latest]
-        permissions:
-            contents: read
-            packages: write
-        runs-on: ${{ matrix.os }}
-        steps:
-            -   name: Checkout repository
-                uses: actions/checkout@v4
+  build-and-push-image:
+    name: Publish Docker Image
+    strategy:
+      max-parallel: 4
+      fail-fast: true
+      matrix:
+        os: [ ubuntu-latest ]
+    permissions:
+      contents: read
+      packages: write
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-            -   name: Log in to the Container registry
-                uses: docker/login-action@v3
-                with:
-                    registry: ${{ env.REGISTRY }}
-                    username: ${{ github.actor }}
-                    password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Log in to the Container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
-            -   name: Set up Docker Buildx
-                id: buildx
-                uses: docker/setup-buildx-action@v3
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v3
 
-            -   name: Cache Docker layers
-                uses: actions/cache@v4.2.3
-                with:
-                    path: /tmp/.buildx-cache
-                    key: ${{ runner.os }}-buildx-${{ github.sha }}
-                    restore-keys: |
-                        ${{ runner.os }}-buildx-
-            -   name: Get Environment
-                id: environment
-                run: |
-                    if [[ ${{ github.ref }} == refs/tags/* ]]; then
-                      echo "::set-output name=name::production"
-                    else
-                      echo "::set-output name=name::staging"
-                    fi
+      - name: Cache Docker layers
+        uses: actions/cache@v4.2.3
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-
 
-            -   name: Extract metadata (tags, labels) for Docker
-                id: meta
-                uses: docker/metadata-action@v5
-                with:
-                    images: ${{ env.REGISTRY }}/${{ env.ORGANIZATION }}/${{ env.SERVICE }}
+      - name: Get Environment
+        id: environment
+        run: |
+          if [[ ${{ github.ref }} == refs/tags/* ]]; then
+            echo "name=production" >> $GITHUB_OUTPUT
+          else
+            echo "name=staging" >> $GITHUB_OUTPUT
+          fi
 
-            -   name: Build and push
-                uses: docker/build-push-action@v6
-                with:
-                    context: .
-                    file: ./Dockerfile
-                    push: true
-                    builder: ${{ steps.buildx.outputs.name }}
-                    tags: ${{ steps.meta.outputs.tags }}, ${{ env.REGISTRY }}/${{ env.ORGANIZATION }}/${{ env.SERVICE }}:${{ steps.environment.outputs.name }}
-                    labels: ${{ steps.meta.outputs.labels }}
-                    cache-from: type=local,src=/tmp/.buildx-cache
-                    cache-to: type=local,dest=/tmp/.buildx-cache
-                    target: ${{ steps.environment.outputs.name }}
-                    build-args:
-                        ENVIRONMENT=${{ steps.environment.outputs.name }}
+      - name: Set lowercase organization and service names
+        run: |
+          echo "ORGANIZATION_LC=$(echo '${{ env.ORGANIZATION }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "SERVICE_LC=$(echo '${{ env.SERVICE }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.ORGANIZATION_LC }}/${{ env.SERVICE_LC }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          builder: ${{ steps.buildx.outputs.name }}
+          tags: ${{ steps.meta.outputs.tags }}, ${{ env.REGISTRY }}/${{ env.ORGANIZATION_LC }}/${{ env.SERVICE_LC }}:${{ steps.environment.outputs.name }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+          target: ${{ steps.environment.outputs.name }}
+          build-args:
+            ENVIRONMENT=${{ steps.environment.outputs.name }}

@@ -22,7 +22,7 @@
 		"@tonconnect/ui-react": "^2.2.0",
 		"clsx": "^2.1.1",
 		"eruda": "^3.4.3",
-		"next": "^15.4.2",
+		"next": "^15.4.3",
 		"next-intl": "^4.3.4",
 		"normalize.css": "^8.0.1",
 		"react": "^19",

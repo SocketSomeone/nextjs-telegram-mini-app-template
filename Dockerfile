@@ -4,13 +4,12 @@ WORKDIR /sources
 
 COPY package.json pnpm-lock.yaml ./
 
-RUN npm install -g pnpm
-
-RUN pnpm install --frozen-lockfile
+RUN npm install -g pnpm@10 && \
+    pnpm install --frozen-lockfile
 
 COPY . .
 
-RUN npm run build
+RUN pnpm run build
 
 FROM node:20-alpine AS staging
 
@@ -22,12 +21,10 @@ COPY --from=builder /sources/.next ./.next
 COPY --from=builder /sources/public ./public
 COPY --from=builder /sources/assets ./assets
 
-RUN npm install -g pnpm
-
-RUN pnpm install --frozen-lockfile
+RUN npm install -g pnpm@10 && \
+    pnpm install --frozen-lockfile
 
 EXPOSE 3000
-
 CMD ["npm", "run", "start"]
 
 FROM node:20-alpine AS production
@@ -40,11 +37,8 @@ COPY --from=builder /sources/.next ./.next
 COPY --from=builder /sources/public ./public
 COPY --from=builder /sources/assets ./assets
 
-
-RUN npm install -g pnpm
-
-RUN pnpm install --frozen-lockfile --production --ignore-scripts
+RUN npm install -g pnpm@10 && \
+    pnpm install --frozen-lockfile --production --ignore-scripts
 
 EXPOSE 3000
-
 CMD ["npm", "run", "start"]

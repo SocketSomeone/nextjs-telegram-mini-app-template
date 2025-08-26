@@ -17,7 +17,7 @@
 		]
 	},
 	"dependencies": {
-		"@telegram-apps/sdk-react": "3.3.6",
+		"@telegram-apps/sdk-react": "3.3.7",
 		"@telegram-apps/telegram-ui": "^2.1.9",
 		"@tonconnect/ui-react": "^2.2.0",
 		"clsx": "^2.1.1",

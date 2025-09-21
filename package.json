@@ -7,7 +7,6 @@
 		"dev:https": "next dev --experimental-https",
 		"build": "next build",
 		"start": "next start",
-		"format": "prettier --write \"{src,apps,libs,test}/**/*.ts\"",
 		"lint": "next lint",
 		"prepare": "husky",
 		"publish:git": "release-it"

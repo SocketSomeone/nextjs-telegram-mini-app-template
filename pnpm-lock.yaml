@@ -12,8 +12,8 @@ importers:
         specifier: 3.3.9
         version: 3.3.9(@types/react@19.2.2)(react@19.2.0)(typescript@5.9.3)
       '@telegram-apps/telegram-ui':
-        specifier: ^2.1.12
-        version: 2.1.12(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: ^2.1.13
+        version: 2.1.13(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@tonconnect/ui-react':
         specifier: ^2.3.1
         version: 2.3.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -1166,8 +1166,8 @@ packages:
   '@telegram-apps/signals@1.1.2':
     resolution: {integrity: sha512-1P1kdCLX7MfETGPxH7f3UZKIsdE7Tz5S7QmN4Km1sbYQMakD5Bi1NecSMR7/wnHp50gWMI1JzENcMtCEmouhSg==}
 
-  '@telegram-apps/telegram-ui@2.1.12':
-    resolution: {integrity: sha512-8PqecCMJOVuZNebNXvotACApjIldMOu8SNYqmcWSxpYBYhN2dv3MNs8j6z8D6Q5EbLwHdWcSXvRG4vYeMIga/w==}
+  '@telegram-apps/telegram-ui@2.1.13':
+    resolution: {integrity: sha512-W8a3pxyyLWPSp43GSOzo2i4BKcZ4okgaWiL1TU8rkwUXdANT0tR0yYDIqVRY1rOkT9mimJLK8fDQDxeuz8zOoA==}
     engines: {node: '>=18.0.0', npm: '>=7.0.0'}
     peerDependencies:
       react: ^18.2.0
@@ -4849,7 +4849,7 @@ snapshots:
 
   '@telegram-apps/signals@1.1.2': {}
 
-  '@telegram-apps/telegram-ui@2.1.12(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@telegram-apps/telegram-ui@2.1.13(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@floating-ui/react-dom': 2.1.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@swc/helpers': 0.5.17

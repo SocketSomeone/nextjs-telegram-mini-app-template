@@ -7,7 +7,7 @@ export function useDidMount(): boolean {
 	const [didMount, setDidMount] = useState(false);
 
 	useEffect(() => {
-		setDidMount(true);
+		setDidMount(true); // eslint-disable-line react-hooks/set-state-in-effect
 	}, []);
 
 	return didMount;

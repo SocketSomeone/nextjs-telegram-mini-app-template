@@ -51,9 +51,6 @@ importers:
       '@commitlint/config-angular':
         specifier: ^20.0.0
         version: 20.0.0
-      '@eslint/eslintrc':
-        specifier: ^3.3.1
-        version: 3.3.1
       '@next/eslint-plugin-next':
         specifier: ^15.5.6
         version: 15.5.6

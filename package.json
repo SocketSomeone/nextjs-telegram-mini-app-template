@@ -35,7 +35,7 @@
     "@commitlint/config-angular": "^20.0.0",
     "@next/eslint-plugin-next": "^16.0.1",
     "@release-it/conventional-changelog": "^10.0.1",
-    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -48,7 +48,7 @@
     "lint-staged": "^16.2.6",
     "postcss": "^8",
     "release-it": "^19.0.6",
-    "tailwindcss": "^4.1.16",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5"
   }
 }

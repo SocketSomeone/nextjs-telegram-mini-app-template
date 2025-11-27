@@ -33,7 +33,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-angular": "^20.0.0",
-    "@next/eslint-plugin-next": "^16.0.4",
+    "@next/eslint-plugin-next": "^16.0.5",
     "@release-it/conventional-changelog": "^10.0.2",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24",
@@ -42,7 +42,7 @@
     "@typescript-eslint/eslint-plugin": "8.48.0",
     "@typescript-eslint/parser": "8.48.0",
     "eslint": "^9.39.1",
-    "eslint-config-next": "16.0.4",
+    "eslint-config-next": "16.0.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",

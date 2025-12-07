@@ -1,18 +1,18 @@
 import {
-	setDebug,
-	mountBackButton,
-	restoreInitData,
-	init as initSDK,
-	mountMiniAppSync,
-	bindThemeParamsCssVars,
-	mountViewport,
-	bindViewportCssVars,
-	mockTelegramEnv,
-	type ThemeParams,
-	themeParamsState,
-	retrieveLaunchParams,
+	backButton,
 	emitEvent,
-} from "@telegram-apps/sdk-react";
+	init as initSDK,
+	initData,
+	mainButton,
+	miniApp,
+	mockTelegramEnv,
+	retrieveLaunchParams,
+	secondaryButton,
+	setDebug,
+	themeParams,
+	type ThemeParams,
+	viewport
+} from '@tma.js/sdk-react';
 
 /**
  * Initializes the application and configures its dependencies.
@@ -22,13 +22,13 @@ export async function init(options: {
 	eruda: boolean;
 	mockForMacOS: boolean;
 }): Promise<void> {
-	// Set @telegram-apps/sdk-react debug mode and initialize it.
+	// Set @tma.js/sdk-react debug mode and initialize it.
 	setDebug(options.debug);
 	initSDK();
 
 	// Add Eruda if needed.
 	if (options.eruda) {
-		void import("eruda").then(({ default: eruda }) => {
+		void import('eruda').then(({ default: eruda }) => {
 			eruda.init();
 			eruda.position({ x: window.innerWidth - 50, y: 0 });
 		});
@@ -41,24 +41,19 @@ export async function init(options: {
 		let firstThemeSent = false;
 		mockTelegramEnv({
 			onEvent(event, next) {
-				if (event[0] === "web_app_request_theme") {
-					let tp: ThemeParams = {};
+				if (event.name === 'web_app_request_theme') {
+					let tp: ThemeParams = {} as any;
 					if (firstThemeSent) {
-						tp = themeParamsState();
+						tp = themeParams.state() as any;
 					} else {
 						firstThemeSent = true;
-						tp ||= retrieveLaunchParams().tgWebAppThemeParams;
+						tp ||= retrieveLaunchParams().tgWebAppThemeParams as any;
 					}
-					return emitEvent("theme_changed", { theme_params: tp });
+					return emitEvent('theme_changed', { theme_params: tp as any });
 				}
 
-				if (event[0] === "web_app_request_safe_area") {
-					return emitEvent("safe_area_changed", {
-						left: 0,
-						top: 0,
-						right: 0,
-						bottom: 0,
-					});
+				if (event.name === 'web_app_request_safe_area') {
+					return emitEvent('safe_area_changed', { left: 0, top: 0, right: 0, bottom: 0 });
 				}
 
 				next();
@@ -67,17 +62,18 @@ export async function init(options: {
 	}
 
 	// Mount all components used in the project.
-	mountBackButton.ifAvailable();
-	restoreInitData();
+	backButton.mount.ifAvailable();
+	initData.restore();
 
-	if (mountMiniAppSync.isAvailable()) {
-		mountMiniAppSync();
-		bindThemeParamsCssVars();
+	if (miniApp.mount.isAvailable()) {
+		themeParams.mount();
+		miniApp.mount();
+		themeParams.bindCssVars();
 	}
 
-	if (mountViewport.isAvailable()) {
-		mountViewport().then(() => {
-			bindViewportCssVars();
+	if (viewport.mount.isAvailable()) {
+		viewport.mount().then(() => {
+			viewport.bindCssVars();
 		});
 	}
 }

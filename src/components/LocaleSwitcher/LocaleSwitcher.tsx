@@ -7,7 +7,7 @@ import { FC } from 'react';
 import { localesMap } from '@/core/i18n/config';
 import { setLocale } from '@/core/i18n/locale';
 import { Locale } from '@/core/i18n/types';
-import { hapticFeedback } from '@telegram-apps/sdk-react';
+import { hapticFeedback } from '@tma.js/sdk-react';
 
 export const LocaleSwitcher: FC = () => {
 	const locale = useLocale();

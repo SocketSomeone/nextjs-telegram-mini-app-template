@@ -1,6 +1,6 @@
 'use client';
 
-import { openLink } from '@telegram-apps/sdk-react';
+import { openLink } from '@tma.js/sdk-react';
 import { bem } from '@/css/bem';
 import { Page } from '@/components/Page';
 import { TonConnectButton, useTonWallet } from '@tonconnect/ui-react';

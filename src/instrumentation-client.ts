@@ -1,11 +1,12 @@
 // This file is normally used for setting up analytics and other
 // services that require one-time initialization on the client.
 
-import { retrieveLaunchParams } from '@telegram-apps/sdk-react';
+import { retrieveLaunchParams } from '@tma.js/sdk-react';
 import { init } from './core/init';
 import { mockEnv } from './mockEnv';
+import consola from 'consola/browser';
 
-mockEnv().then(() => {
+mockEnv().then(async () => {
 	try {
 		const launchParams = retrieveLaunchParams();
 		const { tgWebAppPlatform: platform } = launchParams;
@@ -14,12 +15,12 @@ mockEnv().then(() => {
 			process.env.NODE_ENV === 'development';
 
 		// Configure all application dependencies.
-		init({
+		await init({
 			debug,
 			eruda: debug && ['ios', 'android'].includes(platform),
 			mockForMacOS: platform === 'macos',
 		});
 	} catch (e) {
-		console.log(e);
+		consola.log(e);
 	}
 });

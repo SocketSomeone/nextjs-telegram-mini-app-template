@@ -6,7 +6,7 @@ import {
 	miniApp,
 	useLaunchParams,
 	useSignal,
-} from "@telegram-apps/sdk-react";
+} from "@tma.js/sdk-react";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import { AppRoot } from "@telegram-apps/telegram-ui";
 

@@ -34,22 +34,22 @@
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
     "@commitlint/config-angular": "^20.2.0",
-    "@next/eslint-plugin-next": "^16.0.8",
-    "@release-it/conventional-changelog": "^10.0.2",
-    "@tailwindcss/postcss": "^4.1.17",
+    "@next/eslint-plugin-next": "^16.0.9",
+    "@release-it/conventional-changelog": "^10.0.3",
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^25",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "8.49.0",
     "@typescript-eslint/parser": "8.49.0",
     "eslint": "^9.39.1",
-    "eslint-config-next": "16.0.8",
+    "eslint-config-next": "16.0.9",
     "eslint-plugin-react-hooks": "^7.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "postcss": "^8",
-    "release-it": "^19.0.6",
-    "tailwindcss": "^4.1.17",
+    "release-it": "^19.1.0",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5"
   }
 }

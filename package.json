@@ -32,8 +32,8 @@
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.2.0",
-    "@commitlint/config-angular": "^20.2.0",
+    "@commitlint/cli": "^20.3.0",
+    "@commitlint/config-angular": "^20.3.0",
     "@next/eslint-plugin-next": "^16.1.1",
     "@release-it/conventional-changelog": "^10.0.4",
     "@tailwindcss/postcss": "^4.1.18",

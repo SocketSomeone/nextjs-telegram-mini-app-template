@@ -59,7 +59,7 @@ importers:
         version: 16.1.1
       '@release-it/conventional-changelog':
         specifier: ^10.0.4
-        version: 10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.2(@types/node@25.0.3))
+        version: 10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.3(@types/node@25.0.3))
       '@tailwindcss/postcss':
         specifier: ^4.1.18
         version: 4.1.18
@@ -97,8 +97,8 @@ importers:
         specifier: ^8
         version: 8.5.6
       release-it:
-        specifier: ^19.2.2
-        version: 19.2.2(@types/node@25.0.3)
+        specifier: ^19.2.3
+        version: 19.2.3(@types/node@25.0.3)
       tailwindcss:
         specifier: ^4.1.18
         version: 4.1.18
@@ -1654,8 +1654,8 @@ packages:
     resolution: {integrity: sha512-Sg0xJUNDU1sJNGdfGWhVHX0kkZ+HWcvmVymJbj6NSgZZmW/8S9Y2HQ5euytnIgakgxN6papOAWiwDo1ctFDcoQ==}
     hasBin: true
 
-  basic-ftp@5.0.5:
-    resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
+  basic-ftp@5.1.0:
+    resolution: {integrity: sha512-RkaJzeJKDbaDWTIPiJwubyljaEPwpVWkm9Rt5h9Nd6h7tEXTJ3VB4qxdZBioV7JO5yLUaOKwz7vDOzlncUsegw==}
     engines: {node: '>=10.0.0'}
 
   before-after-hook@4.0.0:
@@ -3272,8 +3272,8 @@ packages:
     resolution: {integrity: sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==}
     engines: {node: '>= 0.4'}
 
-  release-it@19.2.2:
-    resolution: {integrity: sha512-57TBUTBbBXLJsPufYS+Hsb1dSZKZ0ktiYgPkNc3Pmlq/QQtH9X0oD0SG2ib5CsXHTI11m19pyK60NXmvtE6cLg==}
+  release-it@19.2.3:
+    resolution: {integrity: sha512-GTSfrKb0cPmssEFliX0+WQBHC6NiDsMR/M8Y2tkvct/TO36BjB5XV6LO5BUTYV12C3+f78Y8aroku7jCyNiDeA==}
     engines: {node: ^20.12.0 || >=22.0.0}
     hasBin: true
 
@@ -4731,7 +4731,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.7
 
-  '@release-it/conventional-changelog@10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.2(@types/node@25.0.3))':
+  '@release-it/conventional-changelog@10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.3(@types/node@25.0.3))':
     dependencies:
       '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)
       concat-stream: 2.0.0
@@ -4739,7 +4739,7 @@ snapshots:
       conventional-changelog-angular: 8.1.0
       conventional-changelog-conventionalcommits: 9.1.0
       conventional-recommended-bump: 11.2.0
-      release-it: 19.2.2(@types/node@25.0.3)
+      release-it: 19.2.3(@types/node@25.0.3)
       semver: 7.7.3
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -5424,7 +5424,7 @@ snapshots:
 
   baseline-browser-mapping@2.9.11: {}
 
-  basic-ftp@5.0.5: {}
+  basic-ftp@5.1.0: {}
 
   before-after-hook@4.0.0: {}
 
@@ -6223,7 +6223,7 @@ snapshots:
 
   get-uri@6.0.5:
     dependencies:
-      basic-ftp: 5.0.5
+      basic-ftp: 5.1.0
       data-uri-to-buffer: 6.0.2
       debug: 4.4.3
     transitivePeerDependencies:
@@ -7167,7 +7167,7 @@ snapshots:
       gopd: 1.2.0
       set-function-name: 2.0.2
 
-  release-it@19.2.2(@types/node@25.0.3):
+  release-it@19.2.3(@types/node@25.0.3):
     dependencies:
       '@nodeutils/defaults-deep': 1.1.0
       '@octokit/rest': 22.0.1

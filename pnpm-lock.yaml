@@ -15,8 +15,8 @@ importers:
         specifier: 3.0.15
         version: 3.0.15(@types/react@19.2.10)(react@19.2.4)(typescript@5.9.3)
       '@tonconnect/ui-react':
-        specifier: ^2.4.0
-        version: 2.4.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        specifier: ^2.4.1
+        version: 2.4.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1344,17 +1344,17 @@ packages:
   '@tonconnect/protocol@2.4.0':
     resolution: {integrity: sha512-3xg6sMWIrSgW7/f7iPgOb2BI3LaMScjDMqfu20fcEMbOVvNFk3TGAUKK5cJ3pfvUINsyLgPoylcIbPap37jXiA==}
 
-  '@tonconnect/sdk@3.4.0':
-    resolution: {integrity: sha512-URSCY2Ts60HNe6IbNmzvOp/DtZKGIntSbrmLwvogQXTiO9FsTCKasamZcw4TbBaVbhSmIa4te1nwMYEnEn1fJg==}
+  '@tonconnect/sdk@3.4.1':
+    resolution: {integrity: sha512-eVH8erAFout89gXYHXua/es+mmLPiW1r7ng9hgHKYQv85HLq8/zzQEkbJpbTlnIuQ6CJ/QKchjMsIgYz3BYCUQ==}
 
-  '@tonconnect/ui-react@2.4.0':
-    resolution: {integrity: sha512-nvbvEQa7VpkK76OrV4Hi4z0XB6BCWwF81JRUIgF/1mdCwnWaBUsM9yRs1QDEG8dIYFb9lt7UoSiYnrNx4NDT6g==}
+  '@tonconnect/ui-react@2.4.1':
+    resolution: {integrity: sha512-99NOq5Dj7Z0s0FE+bSrS9dAYlfeUGucZKw431+qeiBFvgpqNxzxfoiSI4mef/ezns8wI4UiDrdXyEulek3RwBw==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
-  '@tonconnect/ui@2.4.0':
-    resolution: {integrity: sha512-y8x9sOLdeDFcoBh5AYAYGl8/5juWZV1WUu9pTqTdfRIh+jmC1V/qLwkZxxohl90dittOYewF0srVGqSoXKr8vw==}
+  '@tonconnect/ui@2.4.1':
+    resolution: {integrity: sha512-W0wIDJdDdYV3rqP0vt92H/5HktkjeEAddhAOBo0LKZzrMG0r9obY00FKpuV/i2re9RAXLGq/oMwBRZaRHer4kA==}
 
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
@@ -5006,7 +5006,7 @@ snapshots:
       tweetnacl: 1.0.3
       tweetnacl-util: 0.15.1
 
-  '@tonconnect/sdk@3.4.0':
+  '@tonconnect/sdk@3.4.1':
     dependencies:
       '@tonconnect/isomorphic-eventsource': 0.0.2
       '@tonconnect/isomorphic-fetch': 0.0.3
@@ -5014,17 +5014,17 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@tonconnect/ui-react@2.4.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@tonconnect/ui-react@2.4.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@tonconnect/ui': 2.4.0
+      '@tonconnect/ui': 2.4.1
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     transitivePeerDependencies:
       - encoding
 
-  '@tonconnect/ui@2.4.0':
+  '@tonconnect/ui@2.4.1':
     dependencies:
-      '@tonconnect/sdk': 3.4.0
+      '@tonconnect/sdk': 3.4.1
       classnames: 2.5.1
       csstype: 3.2.3
       deepmerge: 4.3.1

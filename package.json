@@ -23,7 +23,7 @@
     "clsx": "^2.1.1",
     "consola": "^3.4.2",
     "eruda": "^3.4.3",
-    "next": "^16.2.3",
+    "next": "^16.2.4",
     "next-intl": "^4.9.1",
     "normalize.css": "^8.0.1",
     "react": "^19",

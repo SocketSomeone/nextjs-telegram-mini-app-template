@@ -1,4 +1,4 @@
-FROM node:25-alpine AS builder
+FROM node:26-alpine AS builder
 
 WORKDIR /sources
 
@@ -11,7 +11,7 @@ COPY . .
 
 RUN pnpm run build
 
-FROM node:25-alpine AS staging
+FROM node:26-alpine AS staging
 
 WORKDIR /app
 
@@ -27,7 +27,7 @@ RUN npm install -g pnpm@10 && \
 EXPOSE 3000
 CMD ["npm", "run", "start"]
 
-FROM node:25-alpine AS production
+FROM node:26-alpine AS production
 
 WORKDIR /app
 

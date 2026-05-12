@@ -24,12 +24,12 @@
     "consola": "^3.4.2",
     "eruda": "^3.4.3",
     "next": "^16.2.6",
-    "next-intl": "^4.11.1",
+    "next-intl": "^4.11.2",
     "normalize.css": "^8.0.1",
     "react": "^19",
     "react-dom": "^19",
     "sass": "^1.99.0",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",

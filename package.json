@@ -18,17 +18,17 @@
   },
   "dependencies": {
     "@telegram-apps/telegram-ui": "^2.1.13",
-    "@tma.js/sdk-react": "3.0.19",
-    "@tonconnect/ui-react": "^2.4.4",
+    "@tma.js/sdk-react": "3.0.21",
+    "@tonconnect/ui-react": "^3.0.0",
     "clsx": "^2.1.1",
     "consola": "^3.4.2",
     "eruda": "^3.4.3",
-    "next": "^16.2.7",
+    "next": "^16.2.9",
     "next-intl": "^4.13.0",
     "normalize.css": "^8.0.1",
     "react": "^19",
     "react-dom": "^19",
-    "sass": "^1.100.0",
+    "sass": "^1.101.0",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {

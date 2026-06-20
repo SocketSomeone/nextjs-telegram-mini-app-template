@@ -37,7 +37,7 @@
     "@next/eslint-plugin-next": "^16.2.9",
     "@release-it/conventional-changelog": "^11.0.1",
     "@tailwindcss/postcss": "^4.3.1",
-    "@types/node": "^25",
+    "@types/node": "^26",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "8.61.1",

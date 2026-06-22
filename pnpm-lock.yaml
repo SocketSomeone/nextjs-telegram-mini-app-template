@@ -12,8 +12,8 @@ importers:
         specifier: ^2.1.13
         version: 2.1.13(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@tma.js/sdk-react':
-        specifier: 3.0.21
-        version: 3.0.21(@types/react@19.2.17)(react@19.2.7)(typescript@6.0.3)
+        specifier: 3.0.22
+        version: 3.0.22(@types/react@19.2.17)(react@19.2.7)(typescript@6.0.3)
       '@tonconnect/ui-react':
         specifier: ^3.0.0
         version: 3.0.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -1233,11 +1233,11 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@tma.js/bridge@2.3.2':
-    resolution: {integrity: sha512-fb5T5+i44ksAc3N9hnHjmS3hYcTp1UdklFSjBQOf3m8yd5uS/lm0vEJXZucRHQFo3aRSBjlLkHYCtwDQoNHI3A==}
+  '@tma.js/bridge@2.3.3':
+    resolution: {integrity: sha512-R2o/bJY/mc8Kg4F3sF515DawCEUOVpHaOnW/zGq95Tell/ptb/7XPzCa7Ko5iq8KrlmHjpiK/0xnnF423lJ4Vw==}
 
-  '@tma.js/sdk-react@3.0.21':
-    resolution: {integrity: sha512-90FopJx5ZHvRvwb21wGG5aHOOjkzKR75Ip/1G/+sH4DNDDEC3j2X32fZkLEv9f1phGnwmluPUab20O/AcreAjw==}
+  '@tma.js/sdk-react@3.0.22':
+    resolution: {integrity: sha512-q2Fg59oFMDzWl5LMK/xD2qDln2rv1MaX4fx7JhFSmo9paswTQbI1sEnJR2FsxcxDcpKwxjrQx7U5k3uXpg/tMA==}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0 || ^19.0.0
       react: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -1245,8 +1245,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@tma.js/sdk@3.2.2':
-    resolution: {integrity: sha512-7+2YQjzSrLhWmDvHgww7WWgRJN6T+Buij9XVVjn8T12i7UJp2+jdsGWHOt6xDEIyLrM78YPVlhRR1Dhkidd/ZA==}
+  '@tma.js/sdk@3.2.3':
+    resolution: {integrity: sha512-h9Djl0FqDrsc+sxRQ7c6DmpE5Yx+jw1oVDwlDTmgUbOByW9zrVEjvcggWR1ClK4CPQPUXkj0gaUkOWndPOgKeA==}
 
   '@tma.js/signals@1.0.1':
     resolution: {integrity: sha512-i2HUuwGqL4BmM5KAklAUhMhlEgUOF+F4nMHHS/zxrmD0upHE/0CiXCEdQxVeeOGN6e2RrKlonA40sDtR6OUDCw==}
@@ -1254,8 +1254,8 @@ packages:
   '@tma.js/toolkit@1.0.4':
     resolution: {integrity: sha512-6CDlkgc+43WD2jy6jog3B50yt9t+/wRwrN25zOa4iSw4IzfqoFjaQcJzTupBYaRxz19C3Rrir7p0/qStS/Z8vw==}
 
-  '@tma.js/transformers@1.1.3':
-    resolution: {integrity: sha512-zRL+fdo/NBpGqCJfl8ItAvcJIFT5Zy6UOYJwQPmUV5/gTHgmSvmGlrP43PeVi9XZ7Ggf4xbO6LUa4ehxozhMTA==}
+  '@tma.js/transformers@1.2.0':
+    resolution: {integrity: sha512-6bpzbcsSIwfTHa4Xpr1O9yAOL7YBx6ttk9A0lpKibLdkt3Qz60dHtfdf9lkGNndHzPbypggTlTdJQ2Rq+FwiiA==}
 
   '@tma.js/types@1.0.2':
     resolution: {integrity: sha512-qs4mi+U1xZmMQBdMhWAo1X4YqUJ/ae0y28s+GNCpQq58bsJo0h8rvyVOB1RwPvXogIY9+yribbZe6z3AIJmsAQ==}
@@ -4728,11 +4728,11 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
 
-  '@tma.js/bridge@2.3.2(typescript@6.0.3)':
+  '@tma.js/bridge@2.3.3(typescript@6.0.3)':
     dependencies:
       '@tma.js/signals': 1.0.1
       '@tma.js/toolkit': 1.0.4
-      '@tma.js/transformers': 1.1.3(typescript@6.0.3)
+      '@tma.js/transformers': 1.2.0(typescript@6.0.3)
       '@tma.js/types': 1.0.2
       better-promises: 1.0.0
       error-kid: 2.0.0
@@ -4742,21 +4742,21 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@tma.js/sdk-react@3.0.21(@types/react@19.2.17)(react@19.2.7)(typescript@6.0.3)':
+  '@tma.js/sdk-react@3.0.22(@types/react@19.2.17)(react@19.2.7)(typescript@6.0.3)':
     dependencies:
-      '@tma.js/sdk': 3.2.2(typescript@6.0.3)
+      '@tma.js/sdk': 3.2.3(typescript@6.0.3)
       react: 19.2.7
     optionalDependencies:
       '@types/react': 19.2.17
     transitivePeerDependencies:
       - typescript
 
-  '@tma.js/sdk@3.2.2(typescript@6.0.3)':
+  '@tma.js/sdk@3.2.3(typescript@6.0.3)':
     dependencies:
-      '@tma.js/bridge': 2.3.2(typescript@6.0.3)
+      '@tma.js/bridge': 2.3.3(typescript@6.0.3)
       '@tma.js/signals': 1.0.1
       '@tma.js/toolkit': 1.0.4
-      '@tma.js/transformers': 1.1.3(typescript@6.0.3)
+      '@tma.js/transformers': 1.2.0(typescript@6.0.3)
       '@tma.js/types': 1.0.2
       better-promises: 1.0.0
       error-kid: 2.0.0
@@ -4772,7 +4772,7 @@ snapshots:
       better-promises: 1.0.0
       fp-ts: 2.16.11
 
-  '@tma.js/transformers@1.1.3(typescript@6.0.3)':
+  '@tma.js/transformers@1.2.0(typescript@6.0.3)':
     dependencies:
       '@tma.js/toolkit': 1.0.4
       '@tma.js/types': 1.0.2

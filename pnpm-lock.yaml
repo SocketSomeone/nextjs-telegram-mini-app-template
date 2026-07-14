@@ -12,8 +12,8 @@ importers:
         specifier: ^2.1.13
         version: 2.1.13(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@tma.js/sdk-react':
-        specifier: 3.0.22
-        version: 3.0.22(@types/react@19.2.17)(react@19.2.7)(typescript@7.0.2)
+        specifier: 3.0.23
+        version: 3.0.23(@types/react@19.2.17)(react@19.2.7)(typescript@7.0.2)
       '@tonconnect/ui-react':
         specifier: ^3.0.0
         version: 3.0.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -1264,8 +1264,8 @@ packages:
   '@tma.js/bridge@2.3.3':
     resolution: {integrity: sha512-R2o/bJY/mc8Kg4F3sF515DawCEUOVpHaOnW/zGq95Tell/ptb/7XPzCa7Ko5iq8KrlmHjpiK/0xnnF423lJ4Vw==}
 
-  '@tma.js/sdk-react@3.0.22':
-    resolution: {integrity: sha512-q2Fg59oFMDzWl5LMK/xD2qDln2rv1MaX4fx7JhFSmo9paswTQbI1sEnJR2FsxcxDcpKwxjrQx7U5k3uXpg/tMA==}
+  '@tma.js/sdk-react@3.0.23':
+    resolution: {integrity: sha512-19JYJf15loKjRNALUlmwwscfSI76Vqtj9SciymHFlp6B+8qDnBniz4ozD/uXNhZeGvBHR7FJp21P3vO58mNFiw==}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0 || ^19.0.0
       react: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -1273,8 +1273,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@tma.js/sdk@3.2.3':
-    resolution: {integrity: sha512-h9Djl0FqDrsc+sxRQ7c6DmpE5Yx+jw1oVDwlDTmgUbOByW9zrVEjvcggWR1ClK4CPQPUXkj0gaUkOWndPOgKeA==}
+  '@tma.js/sdk@3.3.0':
+    resolution: {integrity: sha512-Hs9cx2lgUPlHL/RO7uKBF00SrOnFV9BLpJ1/r/fW2b/ITqeo4dh4iTmJ/U6h0cSFk5682ZGUSoPVdGJVENsIuA==}
 
   '@tma.js/signals@1.0.1':
     resolution: {integrity: sha512-i2HUuwGqL4BmM5KAklAUhMhlEgUOF+F4nMHHS/zxrmD0upHE/0CiXCEdQxVeeOGN6e2RrKlonA40sDtR6OUDCw==}
@@ -3747,8 +3747,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  valibot@1.4.1:
-    resolution: {integrity: sha512-klCmFTz2jeDluy9RwX+F884TCiogtdBJ/YaxSx1EOBYXa3NXNWj8kR1jjN8rzluwojJVWWaHJ4r1U5LfICnM3g==}
+  valibot@1.4.2:
+    resolution: {integrity: sha512-gjdCvJ6d3RyHAneqxMYMW9QMCwYMb3jpOO0IyHZV1bnRHFBHrX3VkIILt5XYR0WhwHiH7Mty8ovuPZ/O3gamrg==}
     peerDependencies:
       typescript: '>=5'
     peerDependenciesMeta:
@@ -4928,20 +4928,20 @@ snapshots:
       error-kid: 2.0.0
       fp-ts: 2.16.11
       mitt: 3.0.1
-      valibot: 1.4.1(typescript@7.0.2)
+      valibot: 1.4.2(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
-  '@tma.js/sdk-react@3.0.22(@types/react@19.2.17)(react@19.2.7)(typescript@7.0.2)':
+  '@tma.js/sdk-react@3.0.23(@types/react@19.2.17)(react@19.2.7)(typescript@7.0.2)':
     dependencies:
-      '@tma.js/sdk': 3.2.3(typescript@7.0.2)
+      '@tma.js/sdk': 3.3.0(typescript@7.0.2)
       react: 19.2.7
     optionalDependencies:
       '@types/react': 19.2.17
     transitivePeerDependencies:
       - typescript
 
-  '@tma.js/sdk@3.2.3(typescript@7.0.2)':
+  '@tma.js/sdk@3.3.0(typescript@7.0.2)':
     dependencies:
       '@tma.js/bridge': 2.3.3(typescript@7.0.2)
       '@tma.js/signals': 1.0.1
@@ -4951,7 +4951,7 @@ snapshots:
       better-promises: 1.0.0
       error-kid: 2.0.0
       fp-ts: 2.16.11
-      valibot: 1.4.1(typescript@7.0.2)
+      valibot: 1.4.2(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
@@ -4967,7 +4967,7 @@ snapshots:
       '@tma.js/toolkit': 1.0.4
       '@tma.js/types': 1.0.2
       fp-ts: 2.16.11
-      valibot: 1.4.1(typescript@7.0.2)
+      valibot: 1.4.2(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
@@ -7709,7 +7709,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  valibot@1.4.1(typescript@7.0.2):
+  valibot@1.4.2(typescript@7.0.2):
     optionalDependencies:
       typescript: 7.0.2
 

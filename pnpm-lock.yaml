@@ -28,10 +28,10 @@ importers:
         version: 3.4.3
       next:
         specifier: ^16.2.11
-        version: 16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.3)
+        version: 16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6)
       next-intl:
-        specifier: ^4.13.3
-        version: 4.13.3(next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.3))(react@19.2.8)(typescript@7.0.2)
+        specifier: ^4.13.4
+        version: 4.13.4(next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6))(react@19.2.8)(typescript@7.0.2)
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -42,8 +42,8 @@ importers:
         specifier: ^19
         version: 19.2.8(react@19.2.8)
       sass:
-        specifier: ^1.101.3
-        version: 1.101.3
+        specifier: ^1.101.6
+        version: 1.101.6
       tailwind-merge:
         specifier: ^3.6.0
         version: 3.6.0
@@ -2468,8 +2468,8 @@ packages:
     resolution: {integrity: sha512-im9DjEDQ55s9fL4EYzOAv0yMqmMBSZp6G0VvFyTMPKWxiSBHUj9NW/qqLmXUwXrrM7AvqSlTCfvqRb0cM8yYqw==}
     engines: {node: '>=0.10.0'}
 
-  icu-minify@4.13.3:
-    resolution: {integrity: sha512-dCbcvYH4YBgR+SgCtnXGIquuc6JkS7e4n+5mmgseQ5z81KJIWbs5ucBjnrE72HFct6Ddr2yWjX6o1j8DT7MI5w==}
+  icu-minify@4.13.4:
+    resolution: {integrity: sha512-yK6HyPLGlQjqm8fTKtnBpM77z7vl7JdDBN2EXLvmgAu/b7XaOHWZb73M3ISl9ahBTehBv7RYeqqWSHfk1v2YcA==}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -2942,11 +2942,11 @@ packages:
     resolution: {integrity: sha512-NHDDGYudnvRutt/VhKFlX26IotXe1w0cmkDm6JGquh5bz/bDTw0LufSmH/GxTjEdpHEO+bVKFTwdrcGa/9XlKQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  next-intl-swc-plugin-extractor@4.13.3:
-    resolution: {integrity: sha512-Oy86w/VRwqOu6sHEXwthEGhgnQszS79e47i3Kkzv4r+Yfz9ilZMSen8Sp8vtAwuc1nAZPrN13IbsLC5jmc9fVQ==}
+  next-intl-swc-plugin-extractor@4.13.4:
+    resolution: {integrity: sha512-uN1+NMUYbG6YkO3q+rjc2bvAPX9nQ23owemvHJAyW0pRbQjVDwvNhmrV5qaak0oQc/9okbK17KLT49AoMGhVEQ==}
 
-  next-intl@4.13.3:
-    resolution: {integrity: sha512-+bAjmPLsRFG/YAN1ged7wVCbuYvYjEW06ApBRdM7VbtNfXYN1iBFNh28Bi1sX5xGSFvAsGCBC1K2Zjtvn1AMvQ==}
+  next-intl@4.13.4:
+    resolution: {integrity: sha512-jhPAT0u0lahIK6E4gVdZAehugWCosBhLG8sV7xMzgSVoJpxHObP+Fiu+z2FfkEW0XPPtr7uEXoUlLEfhxhNMTg==}
     peerDependencies:
       next: ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
@@ -3306,8 +3306,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.101.3:
-    resolution: {integrity: sha512-Z1lLHhtAII+dyLNIQB6JQTZMy7sDxk3f5NzbINRc9ks1P0HCGvSuKev0wUhULFpLSaHBIMZrcTs9WDQUZerrgA==}
+  sass@1.101.6:
+    resolution: {integrity: sha512-j8qYug9WuX19eU5sxJWQlbR8RYhKgXiOYgGjkJRkcW35c3neWtxPdcUW0saN6Od2L0aqEp0AmH9R/QeAxrffMQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -3618,8 +3618,8 @@ packages:
       '@types/react':
         optional: true
 
-  use-intl@4.13.3:
-    resolution: {integrity: sha512-e1qMU4PokNEU7K1TtKROSl3Sv7JLsKh7GyNjuhKZVB444Qfv0qHjet59IZF6GtYE+VwGbhgWqDWfGTnuDPe2Bg==}
+  use-intl@4.13.4:
+    resolution: {integrity: sha512-wRhU5zyPNgu845++EJ8ckQsi89b22QUop7NlGxNXpsnKSwEJr7WErAkdAYeVQgFTmDWsa8e2NI1e14XbWz9Ecw==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
 
@@ -6169,7 +6169,7 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  icu-minify@4.13.3:
+  icu-minify@4.13.4:
     dependencies:
       '@formatjs/icu-messageformat-parser': 3.5.15
 
@@ -6573,26 +6573,26 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  next-intl-swc-plugin-extractor@4.13.3: {}
+  next-intl-swc-plugin-extractor@4.13.4: {}
 
-  next-intl@4.13.3(next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.3))(react@19.2.8)(typescript@7.0.2):
+  next-intl@4.13.4(next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6))(react@19.2.8)(typescript@7.0.2):
     dependencies:
       '@formatjs/intl-localematcher': 0.8.13
       '@parcel/watcher': 2.6.0
       '@swc/core': 1.15.46
-      icu-minify: 4.13.3
+      icu-minify: 4.13.4
       negotiator: 1.0.0
-      next: 16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.3)
-      next-intl-swc-plugin-extractor: 4.13.3
+      next: 16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6)
+      next-intl-swc-plugin-extractor: 4.13.4
       po-parser: 2.1.1
       react: 19.2.8
-      use-intl: 4.13.3(react@19.2.8)
+      use-intl: 4.13.4(react@19.2.8)
     optionalDependencies:
       typescript: 7.0.2
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.3):
+  next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6):
     dependencies:
       '@next/env': 16.2.11
       '@swc/helpers': 0.5.15
@@ -6611,7 +6611,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.2.11
       '@next/swc-win32-arm64-msvc': 16.2.11
       '@next/swc-win32-x64-msvc': 16.2.11
-      sass: 1.101.3
+      sass: 1.101.6
       sharp: 0.34.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -7012,7 +7012,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.101.3:
+  sass@1.101.6:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9
@@ -7425,11 +7425,11 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.17
 
-  use-intl@4.13.3(react@19.2.8):
+  use-intl@4.13.4(react@19.2.8):
     dependencies:
       '@formatjs/fast-memoize': 3.1.7
       '@schummar/icu-type-parser': 1.21.5
-      icu-minify: 4.13.3
+      icu-minify: 4.13.4
       intl-messageformat: 11.2.12
       react: 19.2.8
 

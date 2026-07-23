@@ -24,11 +24,11 @@
     "consola": "^3.4.2",
     "eruda": "^3.4.3",
     "next": "^16.2.11",
-    "next-intl": "^4.13.3",
+    "next-intl": "^4.13.4",
     "normalize.css": "^8.0.1",
     "react": "^19",
     "react-dom": "^19",
-    "sass": "^1.101.3",
+    "sass": "^1.101.6",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {

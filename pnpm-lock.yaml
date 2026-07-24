@@ -28,10 +28,10 @@ importers:
         version: 3.4.3
       next:
         specifier: ^16.2.11
-        version: 16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6)
+        version: 16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.7)
       next-intl:
         specifier: ^4.13.4
-        version: 4.13.4(next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6))(react@19.2.8)(typescript@7.0.2)
+        version: 4.13.4(next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.7))(react@19.2.8)(typescript@7.0.2)
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -42,8 +42,8 @@ importers:
         specifier: ^19
         version: 19.2.8(react@19.2.8)
       sass:
-        specifier: ^1.101.6
-        version: 1.101.6
+        specifier: ^1.101.7
+        version: 1.101.7
       tailwind-merge:
         specifier: ^3.6.0
         version: 3.6.0
@@ -3306,8 +3306,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.101.6:
-    resolution: {integrity: sha512-j8qYug9WuX19eU5sxJWQlbR8RYhKgXiOYgGjkJRkcW35c3neWtxPdcUW0saN6Od2L0aqEp0AmH9R/QeAxrffMQ==}
+  sass@1.101.7:
+    resolution: {integrity: sha512-cDeUYU0dhwKVbpYg/ppsjyuoddxYhWlJOkRoI7+/iZsaSp7iowWDfm+tL2HcUafedWBDvbf/+hx0QRgKG4JSHA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -6575,14 +6575,14 @@ snapshots:
 
   next-intl-swc-plugin-extractor@4.13.4: {}
 
-  next-intl@4.13.4(next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6))(react@19.2.8)(typescript@7.0.2):
+  next-intl@4.13.4(next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.7))(react@19.2.8)(typescript@7.0.2):
     dependencies:
       '@formatjs/intl-localematcher': 0.8.13
       '@parcel/watcher': 2.6.0
       '@swc/core': 1.15.46
       icu-minify: 4.13.4
       negotiator: 1.0.0
-      next: 16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6)
+      next: 16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.7)
       next-intl-swc-plugin-extractor: 4.13.4
       po-parser: 2.1.1
       react: 19.2.8
@@ -6592,7 +6592,7 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6):
+  next@16.2.11(@babel/core@7.29.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.7):
     dependencies:
       '@next/env': 16.2.11
       '@swc/helpers': 0.5.15
@@ -6611,7 +6611,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.2.11
       '@next/swc-win32-arm64-msvc': 16.2.11
       '@next/swc-win32-x64-msvc': 16.2.11
-      sass: 1.101.6
+      sass: 1.101.7
       sharp: 0.34.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -7012,7 +7012,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.101.6:
+  sass@1.101.7:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9

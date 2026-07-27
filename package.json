@@ -23,12 +23,12 @@
     "clsx": "^2.1.1",
     "consola": "^3.4.2",
     "eruda": "^3.4.3",
-    "next": "^16.2.11",
+    "next": "^16.2.12",
     "next-intl": "^4.13.4",
     "normalize.css": "^8.0.1",
     "react": "^19",
     "react-dom": "^19",
-    "sass": "^1.101.7",
+    "sass": "^1.102.0",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {

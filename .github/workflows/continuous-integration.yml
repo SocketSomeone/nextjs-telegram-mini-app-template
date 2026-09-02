@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run ESlint
+      - name: Run Oxlint
         run: pnpm run lint
 
       - name: Run Build

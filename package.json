@@ -7,14 +7,12 @@
     "dev:https": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint .",
+    "lint": "oxlint .",
     "prepare": "husky",
     "publish:git": "release-it"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "pnpm run lint"
-    ]
+    "*.{ts,tsx}": "oxlint"
   },
   "dependencies": {
     "@telegram-apps/telegram-ui": "^2.1.13",
@@ -40,13 +38,11 @@
     "@types/node": "^26",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@typescript-eslint/eslint-plugin": "8.68.0",
-    "@typescript-eslint/parser": "8.68.0",
-    "eslint": "^10",
-    "eslint-config-next": "16.3.3",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.4.1",
+    "oxlint": "1.81.0",
     "postcss": "^8",
     "release-it": "^21.0.2",
     "tailwindcss": "^4.3.3",

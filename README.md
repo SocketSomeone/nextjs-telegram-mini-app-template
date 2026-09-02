@@ -32,7 +32,7 @@ This project contains the following scripts:
   certificate.
 - `build`. Builds the application for production.
 - `start`. Starts the Next.js server in production mode.
-- `lint`. Runs [eslint](https://eslint.org/) to ensure the code quality meets
+- `lint`. Runs [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) to ensure the code quality meets
   the required
   standards.
 

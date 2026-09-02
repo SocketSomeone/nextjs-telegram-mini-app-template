@@ -10,7 +10,6 @@ import {
 	secondaryButton,
 	setDebug,
 	themeParams,
-	type ThemeParams,
 	viewport
 } from '@tma.js/sdk-react';
 
@@ -42,14 +41,14 @@ export async function init(options: {
 		mockTelegramEnv({
 			onEvent(event, next) {
 				if (event.name === 'web_app_request_theme') {
-					let tp: ThemeParams = {} as any;
+					let tp: ReturnType<typeof themeParams.state> = {};
 					if (firstThemeSent) {
-						tp = themeParams.state() as any;
+						tp = themeParams.state();
 					} else {
 						firstThemeSent = true;
-						tp ||= retrieveLaunchParams().tgWebAppThemeParams as any;
+						tp ||= retrieveLaunchParams().tgWebAppThemeParams;
 					}
-					return emitEvent('theme_changed', { theme_params: tp as any });
+					return emitEvent('theme_changed', { theme_params: tp });
 				}
 
 				if (event.name === 'web_app_request_safe_area') {

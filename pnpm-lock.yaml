@@ -28,10 +28,10 @@ importers:
         version: 3.4.3
       next:
         specifier: ^16.3.4
-        version: 16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1)
+        version: 16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.104.0)
       next-intl:
         specifier: ^4.14.2
-        version: 4.14.2(@swc/helpers@0.5.23)(next@16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1))(react@19.2.8)
+        version: 4.14.2(@swc/helpers@0.5.23)(next@16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.104.0))(react@19.2.8)
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -42,8 +42,8 @@ importers:
         specifier: ^19
         version: 19.2.8(react@19.2.8)
       sass:
-        specifier: ^1.103.1
-        version: 1.103.1
+        specifier: ^1.104.0
+        version: 1.104.0
       tailwind-merge:
         specifier: ^3.6.0
         version: 3.6.0
@@ -3150,8 +3150,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.103.1:
-    resolution: {integrity: sha512-9icZURbP51S6S0QGoyaeqk9uB06GNWxsFYWfH5RgpFgqK5FA8tJcM3AdVxrZEVJ7dz+L87nG95gBKf4VuaMHGw==}
+  sass@1.104.0:
+    resolution: {integrity: sha512-btHMApW2bgolvClhRW8AlQJzgI9lUB3pPSofBQQT+E46GWvf9o0TVQ13SYv5riWZVFyPN+JNz3TKW9XhBlc10w==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -6097,7 +6097,7 @@ snapshots:
 
   next-intl-swc-plugin-extractor@4.14.2: {}
 
-  next-intl@4.14.2(@swc/helpers@0.5.23)(next@16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1))(react@19.2.8):
+  next-intl@4.14.2(@swc/helpers@0.5.23)(next@16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.104.0))(react@19.2.8):
     dependencies:
       '@eloqnt/config': 0.1.0
       '@eloqnt/format-json': 0.1.0
@@ -6107,14 +6107,14 @@ snapshots:
       '@swc/core': 1.16.1(@swc/helpers@0.5.23)
       icu-minify: 4.14.2
       negotiator: 1.1.0
-      next: 16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1)
+      next: 16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.104.0)
       next-intl-swc-plugin-extractor: 4.14.2
       react: 19.2.8
       use-intl: 4.14.2(react@19.2.8)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  next@16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.103.1):
+  next@16.3.4(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@26.4.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.104.0):
     dependencies:
       '@next/env': 16.3.4
       '@swc/helpers': 0.5.23
@@ -6133,7 +6133,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.3.4
       '@next/swc-win32-arm64-msvc': 16.3.4
       '@next/swc-win32-x64-msvc': 16.3.4
-      sass: 1.103.1
+      sass: 1.104.0
       sharp: 0.35.4(@types/node@26.4.1)
     transitivePeerDependencies:
       - '@babel/core'
@@ -6541,7 +6541,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.103.1:
+  sass@1.104.0:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9

@@ -21,13 +21,13 @@
     "clsx": "^2.1.1",
     "consola": "^3.4.2",
     "eruda": "^3.4.3",
-    "next": "^16.3.4",
-    "next-intl": "^4.14.2",
+    "next": "^16.3.5",
+    "next-intl": "^4.14.4",
     "normalize.css": "^8.0.1",
     "react": "^19",
     "react-dom": "^19",
-    "sass": "^1.104.0",
-    "tailwind-merge": "^3.6.0"
+    "sass": "^1.104.1",
+    "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",

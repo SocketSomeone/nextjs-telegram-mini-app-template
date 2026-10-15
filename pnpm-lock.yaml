@@ -15,8 +15,8 @@ importers:
         specifier: 3.0.23
         version: 3.0.23(@types/react@19.3.0)(react@19.3.0)(typescript@7.0.2)
       '@tonconnect/ui-react':
-        specifier: ^5.0.0
-        version: 5.0.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        specifier: ^5.0.1
+        version: 5.0.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1458,14 +1458,14 @@ packages:
   '@tonconnect/sdk@5.0.0':
     resolution: {integrity: sha512-x+87Ruc+lCXkAZ8QleK3xjdNm44ZuYzfCJgqBPWJEQVibQzTLUvNEeqVB5aDu+x78z4E8oaJFH0OZyEd5ppCIg==}
 
-  '@tonconnect/ui-react@5.0.0':
-    resolution: {integrity: sha512-THiKxCPsBacoxt6W4mAcO7Dk1HuMEoE3ZSMVUDwdZTGnZjHric28WRc+tW5P5VMvB+a5jtSL+kF+BGB8I+XUjQ==}
+  '@tonconnect/ui-react@5.0.1':
+    resolution: {integrity: sha512-RXOtqNyAyAa8vsLkwLZkkjmKNijy1154njyznSglonvvKdjkZSygVYBSwMRQ+JU4Jbnp8+6NUMUfTJpYm33S9w==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
-  '@tonconnect/ui@5.0.0':
-    resolution: {integrity: sha512-qoTLtf0Q7NLxqy4KoDs+xF3r6iLa7pQDBdnJup0fo64Ru3EkmLjmSGeZPuzIDjycE1x7moH0V9+JcOmgr+wrEA==}
+  '@tonconnect/ui@5.0.1':
+    resolution: {integrity: sha512-waG7fLA4Qozdf96kOwv8jkv68A+rjDrxk0bthVa0ezbwW2zXGVXciR41By2hbY6P0LetjOAiw6vLSvBRh+JJzQ==}
 
   '@twa-dev/types@7.0.0':
     resolution: {integrity: sha512-LBnMklxORuXd/ypv9gFKcQVNJkCktkeuU+2V6B5Ww7dcxDCoYBAKkNnIwEQ3cShq+cxTi96jC/CqWhgDMQ7AXQ==}
@@ -4744,15 +4744,15 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@tonconnect/ui-react@5.0.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
+  '@tonconnect/ui-react@5.0.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
-      '@tonconnect/ui': 5.0.0
+      '@tonconnect/ui': 5.0.1
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
     transitivePeerDependencies:
       - encoding
 
-  '@tonconnect/ui@5.0.0':
+  '@tonconnect/ui@5.0.1':
     dependencies:
       '@tonconnect/sdk': 5.0.0
       classnames: 2.5.1

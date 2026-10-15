@@ -15,8 +15,8 @@ importers:
         specifier: 3.0.23
         version: 3.0.23(@types/react@19.3.0)(react@19.3.0)(typescript@7.0.2)
       '@tonconnect/ui-react':
-        specifier: ^3.0.2
-        version: 3.0.2(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        specifier: ^5.0.0
+        version: 5.0.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1455,17 +1455,17 @@ packages:
   '@tonconnect/protocol@3.0.0':
     resolution: {integrity: sha512-YqwllY12+rXsAZgKD5mlRBb6wXEbe9jKXMCFOV387yCKQDMnwXK1fbgKWrroPp9fPDtQHXhilZQNnuAKS/iR/w==}
 
-  '@tonconnect/sdk@4.0.2':
-    resolution: {integrity: sha512-BIoixBenjWLIYhJrdYw9IF20ukE/zvInxoj82McSN1IUmn2Q6fkUnrQwpnIRXW0SqTIDEJPK29btP7euFCIjTA==}
+  '@tonconnect/sdk@5.0.0':
+    resolution: {integrity: sha512-x+87Ruc+lCXkAZ8QleK3xjdNm44ZuYzfCJgqBPWJEQVibQzTLUvNEeqVB5aDu+x78z4E8oaJFH0OZyEd5ppCIg==}
 
-  '@tonconnect/ui-react@3.0.2':
-    resolution: {integrity: sha512-qPOnSSaKFoWPa2h1XR3eUp9wVGGQf9SE4+47wKg30WcCUp61QGAm9lNB5cEvGdS683jDeEDv1JWdHROG/AWkow==}
+  '@tonconnect/ui-react@5.0.0':
+    resolution: {integrity: sha512-THiKxCPsBacoxt6W4mAcO7Dk1HuMEoE3ZSMVUDwdZTGnZjHric28WRc+tW5P5VMvB+a5jtSL+kF+BGB8I+XUjQ==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
-  '@tonconnect/ui@3.0.2':
-    resolution: {integrity: sha512-bAOVfN3p/x40Bx7VcvAmH0DvGKwN9qNnkYUqkhUVckHOdwgfdtEMAQaE3w4Dabguse4VoXDzdmf/1rSl56wEgQ==}
+  '@tonconnect/ui@5.0.0':
+    resolution: {integrity: sha512-qoTLtf0Q7NLxqy4KoDs+xF3r6iLa7pQDBdnJup0fo64Ru3EkmLjmSGeZPuzIDjycE1x7moH0V9+JcOmgr+wrEA==}
 
   '@twa-dev/types@7.0.0':
     resolution: {integrity: sha512-LBnMklxORuXd/ypv9gFKcQVNJkCktkeuU+2V6B5Ww7dcxDCoYBAKkNnIwEQ3cShq+cxTi96jC/CqWhgDMQ7AXQ==}
@@ -1772,8 +1772,8 @@ packages:
   caniuse-lite@1.0.30001810:
     resolution: {integrity: sha512-TITQPUkaz+aVk5GL6NhOdwk1aEaNTSDPsGFWrTuhKGtjTF70jL/Oht2W4c6rXUe5fu7Ie19VIahAXHIIiWWNeg==}
 
-  caniuse-lite@1.0.30001816:
-    resolution: {integrity: sha512-+8Yx7BXCoqk6IF8yTicjfUR6D/ldJzdlsodlEOiOSPmhK844WIgk67/zIQaGAOxNkZyyvBlrRFnLvqKIoqbAFw==}
+  caniuse-lite@1.0.30001815:
+    resolution: {integrity: sha512-uDybUEyfgbyJJ93J1vikTylBX31AkdVYeVPeffMQpf8XN7hSfr0oZOn4VFOIMNvtU5+rHvC5Udg2TgtJKHm23Q==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -1991,8 +1991,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  electron-to-chromium@1.5.455:
-    resolution: {integrity: sha512-EDKY1GvJLJC0UQpk+zWxnXp315azNHIns3arXVNUQUOLaon6GtIzBBXWvNno7bVoDXRPnEAV2uwgMCb+RvG5hQ==}
+  electron-to-chromium@1.5.452:
+    resolution: {integrity: sha512-cVvk1YBSj6571VmV6hdJTqj94Y79xSu8cj6Y9t6ae4Y4431z8/7EJFvu3rVp90xhfuv9BpPKUmaLfTo4+FOGBg==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -4736,7 +4736,7 @@ snapshots:
       tweetnacl: 1.0.3
       tweetnacl-util: 0.15.1
 
-  '@tonconnect/sdk@4.0.2':
+  '@tonconnect/sdk@5.0.0':
     dependencies:
       '@tonconnect/isomorphic-eventsource': 0.0.2
       '@tonconnect/isomorphic-fetch': 0.0.3
@@ -4744,17 +4744,17 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@tonconnect/ui-react@3.0.2(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
+  '@tonconnect/ui-react@5.0.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
-      '@tonconnect/ui': 3.0.2
+      '@tonconnect/ui': 5.0.0
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
     transitivePeerDependencies:
       - encoding
 
-  '@tonconnect/ui@3.0.2':
+  '@tonconnect/ui@5.0.0':
     dependencies:
-      '@tonconnect/sdk': 4.0.2
+      '@tonconnect/sdk': 5.0.0
       classnames: 2.5.1
       csstype: 3.2.3
       deepmerge: 4.3.1
@@ -4988,8 +4988,8 @@ snapshots:
   browserslist@4.29.3:
     dependencies:
       baseline-browser-mapping: 2.11.28
-      caniuse-lite: 1.0.30001816
-      electron-to-chromium: 1.5.455
+      caniuse-lite: 1.0.30001815
+      electron-to-chromium: 1.5.452
       node-releases: 2.0.58
       update-browserslist-db: 1.3.4(browserslist@4.29.3)
 
@@ -5035,7 +5035,7 @@ snapshots:
 
   caniuse-lite@1.0.30001810: {}
 
-  caniuse-lite@1.0.30001816: {}
+  caniuse-lite@1.0.30001815: {}
 
   chalk@4.1.2:
     dependencies:
@@ -5242,7 +5242,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  electron-to-chromium@1.5.455: {}
+  electron-to-chromium@1.5.452: {}
 
   emoji-regex@10.6.0: {}
 

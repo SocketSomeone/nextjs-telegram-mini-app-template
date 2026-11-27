@@ -22,7 +22,7 @@
     "consola": "^3.4.2",
     "eruda": "^3.4.3",
     "next": "^16.4.6",
-    "next-intl": "^4.16.0",
+    "next-intl": "^4.16.1",
     "normalize.css": "^8.0.1",
     "react": "^19",
     "react-dom": "^19",
